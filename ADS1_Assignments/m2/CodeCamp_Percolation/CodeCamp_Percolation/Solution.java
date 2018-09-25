@@ -40,10 +40,10 @@ class Percolation {
 			qUnion.union(myIndex(row, col + 1), myIndex(row, col));
 		}
 		if (row == 0) {
-			qUnion.union(myIndex(row, col), size);
+			qUnion.union(myIndex(row, col), size * size);
 		}
 		if (col == size - 1) {
-			qUnion.union(myIndex(row, col), size + 1);
+			qUnion.union(myIndex(row, col), size * size + 1);
 		}
 	}
 	public boolean percolates() {
