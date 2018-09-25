@@ -47,7 +47,7 @@ class Percolation {
 		}
 	}
 	public boolean percolates() {
-		return qUnion.connected(size, size * size + 1);
+		return qUnion.connected(size * size, size * size + 1);
 	}
 }
 public class Solution {
