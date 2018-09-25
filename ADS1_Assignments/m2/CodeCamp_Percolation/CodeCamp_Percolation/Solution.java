@@ -22,17 +22,18 @@ class Percolation {
 		return row * size + col;
 	}
 	public void open(int row, int col) {
+
 		grid[row][col] = true;
 		// bottom
 		if (row + 1 < size && grid[row + 1][col]) {
 			qUnion.union(myIndex(row + 1, col), myIndex(row, col));
 		}
 		// top
-		if (row - 1 > 0 && grid[row - 1][col]) {
+		if (row - 1 >= 0 && grid[row - 1][col]) {
 			qUnion.union (myIndex(row - 1, col), myIndex(row, col));
 		}
 		// left
-		if (col - 1 > 0 && grid[row][col - 1]) {
+		if (col - 1 >= 0 && grid[row][col - 1]) {
 			qUnion.union(myIndex(row, col - 1), myIndex(row, col));
 		}
 		// right
