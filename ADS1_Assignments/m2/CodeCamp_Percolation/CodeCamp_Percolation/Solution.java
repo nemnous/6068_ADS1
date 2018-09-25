@@ -55,9 +55,8 @@ public class Solution {
 		Scanner scan = new Scanner(System.in);
 		int n = scan.nextInt();
 		Percolation percObj = new Percolation(n);
-		while (n > 0) {
+		while (scan.hasNext()) {
 			percObj.open(scan.nextInt() - 1, scan.nextInt() - 1);
-			n--;
 		}
 		System.out.println(percObj.percolates());
 	}
