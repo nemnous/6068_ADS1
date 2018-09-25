@@ -25,7 +25,7 @@ class Percolation {
 		grid[row][col] = true;
 		// bottom
 		if (row + 1 < size && grid[row + 1][col]) {
-			qUnion.union(myIndex( row + 1, col), myIndex(row, col));
+			qUnion.union(myIndex(row + 1, col), myIndex(row, col));
 		}
 		// top
 		if (row - 1 > 0 && grid[row - 1][col]) {
@@ -47,7 +47,7 @@ class Percolation {
 		}
 	}
 	public boolean percolates() {
-		return qUnion.connected(size, size + 1);
+		return qUnion.connected(size, size * size + 1);
 	}
 }
 public class Solution {
