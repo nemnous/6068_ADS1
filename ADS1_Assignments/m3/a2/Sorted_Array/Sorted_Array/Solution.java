@@ -8,13 +8,12 @@ class Solution {
 		int size2 = scan.nextInt();
 		scan.nextLine();
 		String[] str = (scan.nextLine() + "," + scan.nextLine()).split(",");
-		System.out.println(Arrays.toString(str));
-
-		int[] Array = new int[size1 + size2];
-		for(int i = 0; i < size1 + size2; i++) {
-			Array[i] = Integer.parseInt(str[i]);
-		}
-		Arrays.sort(Array);
-		System.out.println(Arrays.toString(Array));
+		// int[] Array = new int[size1 + size2];
+		// for(int i = 0; i < size1 + size2; i++) {
+		// 	Array[i] = Integer.parseInt(str[i]);
+		// }
+		Arrays.sort(str);
+		String nani = String.join(" ", str);
+		System.out.println(nani);
 	}
 }
