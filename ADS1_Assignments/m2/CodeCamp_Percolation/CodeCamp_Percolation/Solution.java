@@ -14,11 +14,15 @@ class Percolation {
 	private boolean[][] grid;
 	private int size;
 	private WeightedQuickUnionUF qUnion;
+	private int vTop;
+	private int vBottom;
 
 	Percolation(int n) {
 		grid = new boolean[n][n];
 		qUnion = new WeightedQuickUnionUF(n * n + 2);
 		size = n;
+		vTop = n * n;
+		vBottom = n * n + 1;
 	}
 
 	public int myIndex(int row, int col) {
@@ -44,16 +48,15 @@ class Percolation {
 		if (col + 1 < size && grid[row][col + 1]) {
 			qUnion.union(myIndex(row, col), myIndex(row, col + 1));
 		}
-
 		if (row == 0) {
-			qUnion.union(myIndex(row, col), size * size);
+			qUnion.union(myIndex(row, col), vTop);
 		}
 		if (col == size - 1) {
-			qUnion.union(myIndex(row, col), size * size + 1);
+			qUnion.union(myIndex(row, col), vBottom);
 		}
 	}
 	public boolean percolates() {
-		return qUnion.connected(size * size, size * size + 1);
+		return qUnion.connected(vTop, vBottom);
 	}
 }
 public class Solution {
