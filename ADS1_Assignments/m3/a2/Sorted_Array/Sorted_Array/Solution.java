@@ -8,7 +8,8 @@ class Solution {
 		int size2 = scan.nextInt();
 		String str1 = scan.nextLine();
 		String str2 = scan.nextLine();
-		String str3 = str1 + "," + str2;		
+		String str3 = str1 + "," + str2;	
+		System.out.println(str3);	
 		String[] str = str3.split(",");
 		for(String i : str) {
 			System.out.print(i + " ");
