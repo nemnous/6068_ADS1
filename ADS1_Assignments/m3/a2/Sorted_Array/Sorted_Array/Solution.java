@@ -6,8 +6,14 @@ class Solution {
 		Scanner scan = new Scanner(System.in);
 		int size1 = scan.nextInt();
 		int size2 = scan.nextInt();
+		String[] str;
 		scan.nextLine();
-		String[] str = (scan.nextLine() + "," + scan.nextLine()).split(",");
+		if (size1 != 0)
+			str = (scan.nextLine() + "," + scan.nextLine()).split(",");
+		else {
+			scan.nextLine();
+			str = scan.nextLine().split(",");
+		}
 		int[] Array = new int[size1 + size2];
 		for(int i = 0; i < size1 + size2; i++) {
 			Array[i] = Integer.parseInt(str[i]);
