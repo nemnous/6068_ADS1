@@ -13,7 +13,7 @@ class Solution {
 			Array[i] = Integer.parseInt(str[i]);
 		}
 		Arrays.sort(Array);
-		String nani = Arrays.toString(Array).replaceAll("[,/[/]]", "");
+		String nani = Arrays.toString(Array).replaceAll("[^0-9]", "");
 		System.out.println(nani);
 	}
 }
