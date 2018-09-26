@@ -19,7 +19,7 @@ class Percolation {
 
 	Percolation(int n) {
 		grid = new boolean[n][n];
-		qUnion = new WeightedQuickUnionUF(n * n + 2);
+		qUnion = new WeightedQuickUnionUF((n * n) + 2);
 		size = n;
 		vTop = n * n;
 		vBottom = n * n + 1;
@@ -50,8 +50,7 @@ class Percolation {
 		}
 		if (row == 0) {
 			qUnion.union(myIndex(row, col), vTop);
-		}
-		if (col == size - 1) {
+		}else if (col == size - 1) {
 			qUnion.union(myIndex(row, col), vBottom);
 		}
 	}
