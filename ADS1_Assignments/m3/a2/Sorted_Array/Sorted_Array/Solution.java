@@ -10,7 +10,9 @@ class Solution {
 		String str2 = scan.nextLine();
 		String str3 = str1 + "," + str2;		
 		String[] str = str3.split(",");
-		System.out.println(Arrays.toString(str));
+		for(String i : str) {
+			System.out.print(i + " ");
+		}
 
 		int[] Array = new int[size1 + size2];
 		for(int i = 0; i < size1 + size2; i++) {
