@@ -13,7 +13,7 @@ class Solution {
 			Array[i] = Integer.parseInt(str[i]);
 		}
 		Arrays.sort(Array);
-		String nani = Array.toString();
+		String nani = Arrays.toString(Array);
 		System.out.println(nani);
 	}
 }
