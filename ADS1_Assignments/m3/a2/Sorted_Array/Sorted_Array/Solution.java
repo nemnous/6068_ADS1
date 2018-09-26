@@ -6,7 +6,9 @@ class Solution {
 		Scanner scan = new Scanner(System.in);
 		int size1 = scan.nextInt();
 		int size2 = scan.nextInt();
-		String[] str = (scan.nextLine() + "," + scan.nextLine()).split(",");
+		String str1 = scan.nextLine();
+		String str2 = scan.nextLine();		
+		String[] str = (str1 + "," + str2).split(",");
 		System.out.println(Arrays.toString(str));
 
 		int[] Array = new int[size1 + size2];
