@@ -106,7 +106,7 @@ public static LinkedList addLargeNumbers(final LinkedList list1,
 /**
  * Class for solution.
  */
-final public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -135,12 +135,13 @@ final public class Solution {
         case "addLargeNumbers":
             pDigits = AddLargeNumbers.numberToDigits(p);
             qDigits = AddLargeNumbers.numberToDigits(q);
-            LinkedList result = AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
+    LinkedList result = AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
             System.out.println(AddLargeNumbers.digitsToNumber(result));
             break;
-        default : 
+        default:
             break;
         }
     }
 
 }
+
