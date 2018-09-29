@@ -33,14 +33,12 @@ class AddLargeNumbers {
     	}
     	int carry = 0;
     	while(!stk1.isEmpty() && !stk2.isEmpty()) {
-    		// int a = stk1.pop();
-    		// System.out.println(a);
     		int a = stk1.pop() + stk2.pop() + carry;
     		// list.insertBeg( a % 10);
     		stk3.push(a%10);
     		// list.print();
     		// System.out.println();
-    		carry = (a/10) % 10;
+    		carry = a/10;
     		//     	stk1.print();
 
 
