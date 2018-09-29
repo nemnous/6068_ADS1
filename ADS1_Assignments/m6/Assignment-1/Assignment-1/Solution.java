@@ -46,14 +46,19 @@ class AddLargeNumbers {
 
     	if(list1.size < list2.size) {
     		for(int i = list1.size; i < list2.size; i++) {
-    			stk3.push(stk2.pop() + carry);
+    			// stk3.push(stk2.pop() + carry);
+    			int a = stk2.pop() + carry;
+    			stk3.push(a%10);
+    			carry = a/10;
     		}
     	} else if (list2.size < list1.size) {
     		for(int i = list2.size; i < list1.size; i++) {
-    			stk3.push(stk1.pop() + carry);
+    			// stk3.push(stk1.pop() + carry);
+    			int a = stk1.pop() + carry;
+	    		stk3.push(a%10);
+	    		carry = a/10;
     		}
-    	}
-    	if(carry > 0) {
+    	} if(carry > 0) {
     		stk3.push(carry);
     	}
     	while(!stk3.isEmpty()) {
