@@ -40,19 +40,28 @@ class AddLargeNumbers {
             carry = a / ten;
 
         }
-
-        if (list1.size() < list2.size()) {
-            for (int i = list1.size(); i < list2.size(); i++) {
+        int l1 = list1.size();
+        int l2 = list2.size();
+        if (l1 < l2) {
+            int t = l1;
+            l1 = l2;
+            l2 = l1;
+            Stack<Integer> tstk = stk1;
+            stk2 = stk1;
+            stk1 = tstk;
+        }
+        if (l1 < l2) {
+            for (int i = l1; i < l2; i++) {
                 int a = stk2.pop() + carry;
                 stk3.push(a % ten);
                 carry = a / ten;
             }
-        } else if (list2.size() < list1.size()) {
-            for (int i = list2.size(); i < list1.size(); i++) {
-                int a = stk1.pop() + carry;
-                stk3.push(a % ten);
-                carry = a / ten;
-            }
+        // } else if (list2.size() < list1.size()) {
+        //     for (int i = list2.size(); i < list1.size(); i++) {
+        //         int a = stk1.pop() + carry;
+        //         stk3.push(a % ten);
+        //         carry = a / ten;
+        //     }
         }
         if (carry > 0) {
             stk3.push(carry);
