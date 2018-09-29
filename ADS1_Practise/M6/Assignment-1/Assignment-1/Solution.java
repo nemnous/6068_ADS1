@@ -42,7 +42,7 @@ class AddLargeNumbers {
         }
         int l1 = list1.size();
         int l2 = list2.size();
-        if (l1 < l2) {
+        if (l2 < l1) {
             int t = l1;
             l1 = l2;
             l2 = l1;
