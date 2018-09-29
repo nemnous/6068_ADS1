@@ -22,7 +22,7 @@ class AddLargeNumbers {
     	Stack<Integer> stk1 = new Stack<Integer>();
     	Stack<Integer> stk2 = new Stack<Integer>();
     	Stack<Integer> stk3 = new Stack<Integer>();
-    	System.out.println(list1.size);
+    	// System.out.println(list1.size);
     	for(int i = 0; i < list1.size; i++) {
     		int a = (Integer)(list1.dataAt(i));
     		stk1.push(a);
@@ -45,9 +45,14 @@ class AddLargeNumbers {
 
 
     	}
+
     	if(list1.size < list2.size) {
     		for(int i = list1.size; i < list2.size; i++) {
     			stk3.push(stk2.pop() + carry);
+    		}
+    	} else if (list2.size < list1.size) {
+    		for(int i = list2.size; i < list1.size; i++) {
+    			stk3.push(stk1.pop() + carry);
     		}
     	}
     	while(!stk3.isEmpty()) {
