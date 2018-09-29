@@ -12,9 +12,9 @@ class CircularLinkedList<T> {
      */
     private Node<T> head = null;
     private Node<T> tail = null;
-    
+
     //for getnext method.
-    private Node<T> current = null;   
+    private Node<T> current = null;
 
     /**
      * Class for node.
@@ -64,7 +64,7 @@ class CircularLinkedList<T> {
 
     //working
     public T getNext() {
-        if(current == null) {
+        if (current == null) {
             current = head;
         }
         Node<T> tmp = current;
@@ -82,14 +82,14 @@ class CircularLinkedList<T> {
         }
 
         //if 1st element needsto be deleted
-        if(head.data.equals(element)) {
+        if (head.data.equals(element)) {
             head = head.next;
             tail.next = head;
             return element;
         }
 
         //if last one to be removed
-        if(tail.data.equals(element)) {
+        if (tail.data.equals(element)) {
             Node<T> tempp = head;
             while (!tempp.next.equals(tail)) {
                 tempp = tempp.next;
@@ -102,7 +102,7 @@ class CircularLinkedList<T> {
 
         //normal cases
         Node<T> currenttmp = head;
-        while(!currenttmp.next.data.equals(element)) {
+        while (!currenttmp.next.data.equals(element)) {
             currenttmp = currenttmp.next;
         }
         Node<T> tmp2 = currenttmp.next.next;
@@ -137,11 +137,11 @@ public final class Solution {
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int inputcount = scan.nextInt();
-        for(int inp = 0; inp < inputcount; inp++) {
+        for (int inp = 0; inp < inputcount; inp++) {
             int noOfPersons = scan.nextInt();
             int mthShift = scan.nextInt();
             CircularLinkedList<Integer> cl = new CircularLinkedList<Integer>();
-            
+
 
             ///*
             for (int i = 0; i < noOfPersons; i++) {
@@ -149,17 +149,18 @@ public final class Solution {
             }
             //*/
 
-            
-            
-            ///*
+
+
+            String str = "";
             while (!cl.isEmpty()) {
                 int t2 = 0;
                 for (int i = 0; i < mthShift; i++) {
                     t2 = cl.getNext();
                 }
-                System.out.print(cl.remove(t2) + " ");
+                // System.out.print(cl.remove(t2) + " ");
+                str += cl.remove(t2) + " ";
             }
-            System.out.print("\b");
+            System.out.println(str + "\b");
             System.out.println();
             //*/
         }
