@@ -160,7 +160,7 @@ public final class Solution {
                 // System.out.print(cl.remove(t2) + " ");
                 str += cl.remove(t2) + " ";
             }
-            System.out.println(str + "\b");
+            System.out.println(str.trim());
             System.out.println();
             //*/
         }
