@@ -161,7 +161,7 @@ public final class Solution {
                 str += cl.remove(t2) + " ";
             }
             System.out.println(str.trim());
-            System.out.println();
+            // System.out.println();
             //*/
         }
     }
