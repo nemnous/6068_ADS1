@@ -6,14 +6,17 @@ class AddLargeNumbers {
 		for (Character i : charA) {
 				list.insertEnd(Character.getNumericValue(i));
     	}
+    	// System.out.println("list");
+    	// list.print();
     	return list;
+
     }
     public static String digitsToNumber(LinkedList list) {
     	String str = "";
-    	int i = 0;
-    	while(!list.isEmpty()) {
+    	// int i = 0;
+    	for(int i = 0; i < list.size; i++) {
+    		// System.out.println(list.dataAt(i));
     		str += String.valueOf(list.dataAt(i));
-    		// list.delAt(i++);
     	}
     	return str;
     }

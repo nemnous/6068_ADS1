@@ -8,15 +8,9 @@ class LinkedList<E> {
 	Node head = new Node();
 	public void insertAt(E data, int pos) {
 		Node newNode = new Node();
-		if (pos > size + 1 || pos < 0) return;
-		if (size == 0) {
-			head.data = data;
-			return;
-		}
+		if (pos > size || pos < 0) return;
 		if (pos == 0) {
-			newNode.data = data;
-			newNode.next = head;
-			head = newNode;
+			head.data = data;
 			size++;
 			return;
 		}
@@ -37,8 +31,7 @@ class LinkedList<E> {
 		Node temp = head;
 		int tcount = 0;
 		if(pos == 0) {
-			// head.next = null;
-			head = head.next;
+			head.next = null;
 			return;
 		}
 		while(tcount++ < pos - 1)
@@ -62,7 +55,6 @@ class LinkedList<E> {
 	public E dataEnd() {
 		return dataAt(size -1);
 	}
-	// public void 
 	public void print() {
 		Node temp = head;
 		int tcount = 0;
