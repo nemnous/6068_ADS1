@@ -53,7 +53,7 @@ class AddLargeNumbers {
     			stk3.push(stk1.pop() + carry);
     		}
     	}
-    	else if(carry > 0) {
+    	if(carry > 0) {
     		stk3.push(carry);
     	}
     	while(!stk3.isEmpty()) {
