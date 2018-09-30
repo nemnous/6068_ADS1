@@ -1,51 +1,52 @@
-class Percolation {
+import java.util.Scanner;
+public class Solution{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int size = Integer.parseInt(sc.nextLine());
+		percolate obj = new percolate(size);
+		while(sc.hasNextLine()){
+			String[] input = sc.nextLine().split(" ");
+			obj.open(Integer.parseInt(input[0])-1, Integer.parseInt(input[1])-1);
+		}
+			System.out.println(obj.ispercolate());
+	}
+}
 
-	private boolean[][] grid;
-	private int size;
-	private WeightedQuickUnionUF qUnion;
-	private int vTop;
-	private int vBottom;
 
-	Percolation(int n) {
-		grid = new boolean[n][n];
-		qUnion = new WeightedQuickUnionUF((n * n) + 2);
-		size = n;
-		vTop = n * n;
-		vBottom = n * n + 1;
+class percolate{
+	int size;
+	boolean[][] grid;
+	WeightedQuickUnionUF obj;
+
+	percolate(int size){
+		this.size = size;
+		grid = new boolean[size][size];
+		obj = new WeightedQuickUnionUF(size*size + 2);
 	}
 
-	public int myIndex(int row, int col) {
-		return row * size + col;
-	}
-
-	public void open(int row, int col) {
-
-		grid[row][col] = true;
-		// bottom
-		if (row + 1 < size && grid[row + 1][col]) {
-			qUnion.union(myIndex(row + 1, col), myIndex(row, col));
+	public void open(int i, int j){
+		if(grid[i][j]) return;
+		grid[i][j] = true;
+		if(i == 0){
+			obj.union(convert(i, j), size*size);
+		}if(i == size-1){
+			obj.union(convert(i, j), size*size+1);
 		}
-		// top
-		if (row - 1 >= 0 && grid[row - 1][col]) {
-			qUnion.union (myIndex(row - 1, col), myIndex(row, col));
-		}
-		// left
-		if (col - 1 >= 0 && grid[row][col - 1]) {
-			qUnion.union(myIndex(row, col - 1), myIndex(row, col));
-		}
-		// right
-		if (col + 1 < size && grid[row][col + 1]) {
-			qUnion.union(myIndex(row, col + 1), myIndex(row, col));
-		}
-		if (row == 0) {
-			qUnion.union(vTop, myIndex(row, col));
-		}
-		if (row == size - 1) {
-			qUnion.union(vBottom, myIndex(row, col));
+		if(i < size - 1 && grid[i+1][j]){
+			obj.union(convert(i,j), convert(i+1,j));
+		}if(i > 0 && grid[i-1][j]){
+			obj.union(convert(i, j), convert(i-1,j));
+		}if(j > 0 && grid[i][j-1]){
+			obj.union(convert(i, j), convert(i,j-1));
+		}if(j < size-1 && grid[i][j+1]){
+			obj.union(convert(i, j), convert(i,j+1));
 		}
 	}
+	public boolean ispercolate(){
+		return obj.connected(size*size, size*size+1);
+	}
 
-	public boolean percolates() {
-		return qUnion.connected(vTop, vBottom);
+	public int convert(int i, int j){
+		return ((i * size) + j);
 	}
 }
