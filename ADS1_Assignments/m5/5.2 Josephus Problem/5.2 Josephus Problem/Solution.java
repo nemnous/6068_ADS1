@@ -19,9 +19,13 @@ class CircularLinkedList<T> {
      * Node is having head and tail.
      */
     private Node<T> head = null;
+    /**
+     * tail.
+     */
     private Node<T> tail = null;
-
-    //for getnext method.
+    /**
+     * current.
+     */
     private Node<T> current = null;
 
     /**
@@ -89,7 +93,7 @@ class CircularLinkedList<T> {
  *
  * @return     { description_of_the_return_value }
  */
-    public T remove(T element) {
+    public T remove(final T element) {
         //for one element.
         if (head.next.equals(head) && head.data.equals(element)) {
             T tmp = head.data;
