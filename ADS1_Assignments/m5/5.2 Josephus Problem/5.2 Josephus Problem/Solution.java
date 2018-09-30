@@ -1,14 +1,22 @@
 import java.util.Scanner;
 
 /**
- * LinkedList implementaing Stack.
+ * Circular LinkedList implementaing Stack.
  *
  * @param      <T>   generic mode.
  */
 class CircularLinkedList<T> {
+    /**
+     * Constructs the object.
+     */
+    CircularLinkedList() {
+        /**
+         * only purpose is checkstyle.
+         */
+    }
 
     /**
-     * generic type node.
+     * Node is having head and tail.
      */
     private Node<T> head = null;
     private Node<T> tail = null;
@@ -61,8 +69,11 @@ class CircularLinkedList<T> {
         }
 
     }
-
-    //working
+/**
+ * Gets the next.
+ *
+ * @return     The next.
+ */
     public T getNext() {
         if (current == null) {
             current = head;
@@ -71,24 +82,31 @@ class CircularLinkedList<T> {
         current = tmp.next;
         return tmp.data;
     }
-
-    ///*
+/**
+ * to remove element.
+ *
+ * @param      element  The element
+ *
+ * @return     { description_of_the_return_value }
+ */
     public T remove(T element) {
-        //if single element present
+        //for one element.
         if (head.next.equals(head) && head.data.equals(element)) {
             T tmp = head.data;
             head = null;
             return tmp;
         }
 
-        //if 1st element needsto be deleted
+        //delete 1st element.
         if (head.data.equals(element)) {
             head = head.next;
             tail.next = head;
             return element;
         }
 
-        //if last one to be removed
+        /**
+         * to remove last element.
+         */
         if (tail.data.equals(element)) {
             Node<T> tempp = head;
             while (!tempp.next.equals(tail)) {
@@ -99,8 +117,6 @@ class CircularLinkedList<T> {
             return element;
         }
 
-
-        //normal cases
         Node<T> currenttmp = head;
         while (!currenttmp.next.data.equals(element)) {
             currenttmp = currenttmp.next;
@@ -111,10 +127,6 @@ class CircularLinkedList<T> {
         return element;
 
     }
-    //*/
-
-
-
 }
 
 /**
@@ -126,12 +138,14 @@ public final class Solution {
      * Constructs the object.
      */
     private Solution() {
-
+        /**
+         * purpose of checkstyle.
+         */
     }
 
     /**
-     * main takes input from user and prints output to console.
-     *
+     * main function is the MAIN function of the program.
+     *All IO operations are done here
      * @param      args  The commandline arguments
      */
     public static void main(final String[] args) {
@@ -142,14 +156,9 @@ public final class Solution {
             int mthShift = scan.nextInt();
             CircularLinkedList<Integer> cl = new CircularLinkedList<Integer>();
 
-
-            ///*
             for (int i = 0; i < noOfPersons; i++) {
                 cl.add(i);
             }
-            //*/
-
-
 
             String str = "";
             while (!cl.isEmpty()) {
