@@ -4,9 +4,15 @@ class Stack<E>{
 		stackList.insertEnd(data);
 	}
 	public E pop() {
-		E t = stackList.dataEnd();
-		stackList.delEnd();
-		return t;
+		try {
+			E t = stackList.dataEnd();
+			stackList.delEnd();
+			return t;
+		}
+		catch(Exception E) {
+			System.out.println("FuckedUp XD");
+		}
+		return null;
 	}
 	public boolean isEmpty() {
 		return stackList.isEmpty();

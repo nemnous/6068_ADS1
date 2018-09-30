@@ -6,6 +6,8 @@ class nani {
 		stk.print();
 		System.out.println();
 		stk.pop();
+		stk.pop();
+		stk.pop();
 		stk.print();
 
 	}
