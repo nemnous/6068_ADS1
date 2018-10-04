@@ -22,7 +22,7 @@ public final class Solution {
         String[] str;
         scan.nextLine();
         if (size1 != 0) {
-str = (scan.nextLine() + "," + scan.nextLine()).split(",");
+            str = (scan.nextLine() + "," + scan.nextLine()).split(",");
         } else {
             scan.nextLine();
             str = scan.nextLine().split(",");
@@ -33,7 +33,7 @@ str = (scan.nextLine() + "," + scan.nextLine()).split(",");
         }
         array = sort(array);
 
-    String nani = Arrays.toString(array).replaceAll("[^0-9,]", "");
+        String nani = Arrays.toString(array).replaceAll("[^0-9,]", "");
         System.out.println(nani);
     }
     // public static int[] sort(final int[] array) {
@@ -50,24 +50,22 @@ str = (scan.nextLine() + "," + scan.nextLine()).split(",");
     //     }
     //     return array;
     //     }
-    static int[] sort(int arr[]) 
-    { 
-        int n = arr.length; 
-  
-        // One by one move boundary of unsorted subarray 
-        for (int i = 0; i < n-1; i++) 
-        { 
-            // Find the minimum element in unsorted array 
-            int min_idx = i; 
-            for (int j = i+1; j < n; j++) 
-                if (arr[j] < arr[min_idx]) 
-                    min_idx = j; 
-  
-            // Swap the found minimum element with the first 
-            // element 
-            int temp = arr[min_idx]; 
-            arr[min_idx] = arr[i]; 
-            arr[i] = temp; 
+    static int[] sort(int arr[]) {
+        int n = arr.length;
+
+        // One by one move boundary of unsorted subarray
+        for (int i = 0; i < n - 1; i++) {
+            // Find the minimum element in unsorted array
+            int min_idx = i;
+            for (int j = i + 1; j < n; j++)
+                if (arr[j] < arr[min_idx])
+                    min_idx = j;
+
+            // Swap the found minimum element with the first
+            // element
+            int temp = arr[min_idx];
+            arr[min_idx] = arr[i];
+            arr[i] = temp;
         }
         return arr;
     }
