@@ -31,8 +31,22 @@ str = (scan.nextLine() + "," + scan.nextLine()).split(",");
         for (int i = 0; i < size1 + size2; i++) {
             array[i] = Integer.parseInt(str[i]);
         }
-        Arrays.sort(array);
+        array = sort(array);
+
     String nani = Arrays.toString(array).replaceAll("[^0-9,]", "");
         System.out.println(nani);
     }
+    public static int[] sort(final int[] array) {
+        for(int i : array) {
+            int min = i;
+            for(int j : array) {
+                if(min>j) {
+                    int t = i;
+                    i = j;
+                    j = t;
+                }
+            }
+        }
+        return array;
+        }
 }
