@@ -41,6 +41,7 @@ str = (scan.nextLine() + "," + scan.nextLine()).split(",");
             int min = i;
             for(int j : array) {
                 if(min>j) {
+                    min = j;
                     int t = i;
                     i = j;
                     j = t;
