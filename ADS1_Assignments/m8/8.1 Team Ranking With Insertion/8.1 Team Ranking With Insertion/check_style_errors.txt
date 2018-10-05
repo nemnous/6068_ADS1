@@ -1,0 +1,19 @@
+Starting audit...
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m8\8.1 Team Ranking With Insertion\8.1 Team Ranking With Insertion\Teams.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m8\8.1 Team Ranking With Insertion\8.1 Team Ranking With Insertion\Teams.java:5:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m8\8.1 Team Ranking With Insertion\8.1 Team Ranking With Insertion\Teams.java:8:23: Variable 'teams' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m8\8.1 Team Ranking With Insertion\8.1 Team Ranking With Insertion\Teams.java:9: Line has trailing spaces. [RegexpSingleline]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m8\8.1 Team Ranking With Insertion\8.1 Team Ranking With Insertion\Teams.java:14: Line has trailing spaces. [RegexpSingleline]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m8\8.1 Team Ranking With Insertion\8.1 Team Ranking With Insertion\Teams.java:19:41: '10' is a magic number. [MagicNumber]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m8\8.1 Team Ranking With Insertion\8.1 Team Ranking With Insertion\Teams.java:22: Line has trailing spaces. [RegexpSingleline]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m8\8.1 Team Ranking With Insertion\8.1 Team Ranking With Insertion\Teams.java:26:12: Unused @param tag for 't'. [JavadocMethod]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m8\8.1 Team Ranking With Insertion\8.1 Team Ranking With Insertion\Teams.java:27: Line has trailing spaces. [RegexpSingleline]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m8\8.1 Team Ranking With Insertion\8.1 Team Ranking With Insertion\Teams.java:31:36: Parameter team should be final. [FinalParameters]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m8\8.1 Team Ranking With Insertion\8.1 Team Ranking With Insertion\Teams.java:31:48: Expected @param tag for 'team'. [JavadocMethod]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m8\8.1 Team Ranking With Insertion\8.1 Team Ranking With Insertion\Teams.java:34: Line has trailing spaces. [RegexpSingleline]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m8\8.1 Team Ranking With Insertion\8.1 Team Ranking With Insertion\Teams.java:43:48: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m8\8.1 Team Ranking With Insertion\8.1 Team Ranking With Insertion\Teams.java:43:49: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m8\8.1 Team Ranking With Insertion\8.1 Team Ranking With Insertion\Teams.java:47: Line has trailing spaces. [RegexpSingleline]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m8\8.1 Team Ranking With Insertion\8.1 Team Ranking With Insertion\Teams.java:48: Line has trailing spaces. [RegexpSingleline]
+Audit done.
+Checkstyle ends with 16 errors.
