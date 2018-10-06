@@ -1,0 +1,175 @@
+import java.util.*;
+import java.text.*;
+// implements Comparable<Student>
+class Student {
+	String name, res;
+	Date dob;
+
+	int s1, s2, s3,total;
+	Student(String name, String dobStr, int s1, int s2, int s3, int total, String res) {
+		this.name = name;
+		// this.dob = dob;
+		this.res = res;
+		this.s1 = s1;
+		this.s2 = s2;
+		this.s3 = s3;
+		this.total = total;
+		String dateInString = dobStr;
+	SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy");
+	try {
+	    Date date = formatter.parse(dateInString);
+	    // System.out.println(date);
+	    this.dob = date;
+	    // System.out.println(formatter.format(date));
+	} catch (ParseException e) {
+	    //handle exception if date is not in "dd-MMM-yyyy" format
+	}
+	}
+	public String toString() {
+		return this.name +" " + this.total + " " + this.res;
+	}
+	// public int compareTo( Student that) {
+	// 	int result = this.total - that.total;
+	// 	if(result != 0) {
+	// 		return result;
+	// 	}
+	// 	result = this.s3 - that.s3;
+	// 	if(result != 0) {
+	// 		return result;
+	// 	}
+	// 	result = this.s2 - that.s2;
+	// 	if(result != 0 ) {
+	// 		return result;
+	// 	}
+	// 	return this.dob.compareTo(that.dob);
+	// }
+}
+class SortbyCriteria implements Comparator<Student> 
+{ 
+    // Used for sorting in ascending order
+    public int compare(Student thi, Student that) 
+    { 
+    	System.out.println(thi.total +" " +that.total);
+        int result = thi.total - that.total;
+		if(result != 0) {
+			return result;
+		}
+		result = thi.s3 - that.s3;
+		if(result != 0) {
+			return result;
+		}
+		result = thi.s2 - that.s2;
+		if(result != 0 ) {
+			return result;
+		}
+		return thi.dob.compareTo(that.dob);
+	}
+}
+
+class StudentMerit {
+	Student[] stdData;
+	int size;
+	public StudentMerit() {
+		stdData = new Student[50];
+		size = 0;
+	}
+	public void addStudent(Student Obj) {
+		stdData[size++] = Obj;
+	}
+	public Student[] getArray() {
+		return stdData;
+	}
+}
+class MergeSort<T> {
+    private  T[] aux;
+
+    public  void sort(T[] a, Comparator<T> cp) {
+        aux = (T[]) new Object[a.length];
+        sort(a, 0, a.length - 1, cp);
+    }
+
+    private void merge(T[] a, int lo, int mid, int hi, Comparator<T> cp) {
+        int i = lo, j = mid + 1;
+        
+        for (int k = lo; k <= hi; k++)
+            aux[k] = a[k];
+
+        for (int k = lo; k <= hi; k++)
+            if      (i > mid)              a[k] = aux[j++];
+            else if (j > hi )              a[k] = aux[i++];
+            else if (less(aux[j], aux[i], cp)) a[k] = aux[j++];
+            else                           a[k] = aux[i++];
+    }
+
+    private boolean less(T a, T b, Comparator<T> cp) {
+        return cp.compare(a,b) < 0;
+    } 
+
+    private void sort(T[] a, int lo, int hi, Comparator<T> cp) {
+        if (hi <= lo) return;
+        int mid = lo + (hi - lo) / 2;
+        sort(a, lo, mid, cp);
+        sort(a, mid + 1, hi, cp);
+        merge(a, lo, mid, hi, cp);
+    }
+}
+
+// public class Solution {
+// 	public static void main(String[] args) {
+// 		Student a = new Student("Ajay","12-06-1993",32,33,11,76,"Open");
+// 		Student b = new Student("priya","13-08-1993",21,40,11,72,"SC");
+// 		Student c = new Student("divya","29-07-1993",40,39,20,99,"ST");
+// 		Student[] arr = {a,b,c};
+// 		for(Student i : arr) {
+// 			System.out.println(i);
+// 		}
+// 		// MergeSort<Student> nani = new MergeSort();
+// 		// nani.sort(arr);
+// 		Arrays.sort(arr);
+// 		// System.out.println(arr);
+// 		for(Student i : arr) {
+// 			System.out.println(i);
+// 		}
+// 	}
+
+// }
+public class Solution {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int N = scan.nextInt();
+		int vacancy = scan.nextInt();
+		int unreserve = scan.nextInt();
+		int bc = scan.nextInt();
+		int sc = scan.nextInt();
+		int st = scan.nextInt();
+		Student[] arr = new Student[50];
+		int size = 0;
+		scan.nextLine();
+		for(int i = 0; i < N; i++) {
+			String inp = scan.nextLine();
+			// System.out.println(inp);
+			String[] str = inp.split(",");
+			arr[size++] = new Student(str[0], str[1],Integer.parseInt(str[2]), Integer.parseInt(str[3]), Integer.parseInt(str[4]), Integer.parseInt(str[5]), str[6]);
+			// for(String t : str) {
+			// 	System.out.print(t + " ");
+			// 	System.out.println();
+			// }
+			// System.out.println(str.length);
+			// for(int m = 0; m < 7; m++) {
+			// 	System.out.print(str[m] + " ");
+			// }
+			// System.out.println(str[1]);
+			// size++;
+		}
+		for(int j = 0; j < size; j++) {
+			System.out.println(arr[j]);
+		}
+		// MergeSort<Student> nani = new MergeSort();
+		Arrays.sort(arr, new SortbyCriteria()); 
+		// for(int k= 0; k < vacancy; k++) {
+		// 	System.out.println(arr[size-k]);
+		// }
+
+	}
+}
+
