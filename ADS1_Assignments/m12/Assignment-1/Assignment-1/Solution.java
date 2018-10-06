@@ -26,7 +26,7 @@ class Student {
 	}
 	}
 	public String toString() {
-		return this.name +" " + this.total + " " + this.res;
+		return this.name +"," + this.total + "," + this.res;
 	}
 	// public int compareTo( Student that) {
 	// 	int result = this.total - that.total;
