@@ -129,40 +129,58 @@ public class Solution {
 		int sc = scan.nextInt();
 		int st = scan.nextInt();
 		int reserve = bc + sc + st;
+		// System.out.println(reserve);
 		Student[] arr = new Student[N];
 		int size = 0;
 		scan.nextLine();
-		Student[] resArr = new Student[reserve];
+		// Student[] resArr = new Student[reserve];
 		int resSize = 0;
 		for(int i = 0; i < N; i++) {
 			String inp = scan.nextLine();
 			// System.out.println(inp);
 			String[] str = inp.split(",");
-			Student obj = new Student(str[0], str[1],Integer.parseInt(str[2]), Integer.parseInt(str[3]), Integer.parseInt(str[4]), Integer.parseInt(str[5]), str[6]);
-			arr[size++] = obj;
-			if(str[6].equals("bc") || str[6].equals("st") || str[6].equals("sc"))
-				resArr[resSize++] = obj;
+			// Student obj 
+			arr[size++] = new Student(str[0], str[1],Integer.parseInt(str[2]), Integer.parseInt(str[3]), Integer.parseInt(str[4]), Integer.parseInt(str[5]), str[6]);
+			// if(!arr[size-1].res.equals("Open"))
+				// resArr[resSize++] = arr[size-1];
+			
 		}
+
+		// if(reserve > 0) {
+		// 	for(int i = 0; i < size; i++) {
+		// 		// System.out.println(i.res);
+		// 		if(!arr[i].res.equals("Open"))
+		// 			System.out.println(resSize);
+		// 			System.out.println(arr[i]);
+		// 			resArr[resSize++] = arr[i];
+		// 	}
+		// }
+
+
+		// System.out.println("res arr");
+		// for(int i = 0; i < size; i++) {
+		// 	System.out.println(arr[i]);
+		// }
 		Arrays.sort(arr, new SortbyCriteria()); 
-		Arrays.sort(resArr, new SortbyCriteria());
-		Student[] finalArr  = new Student[vacancy];
-		int finalsize = 0;
-		for(int i = 0; i < unreserve; i++) {
-			finalArr[finalsize++] = arr[i];
-		}
-		if(finalsize < vacancy) {
-			for(int i =0; i < reserve; i ++) {
-				finalArr[finalsize++] = resArr[i];
-			}
-		}
+		// Arrays.sort(resArr, new SortbyCriteria());
+		// Student[] finalArr  = new Student[vacancy];
+		// int finalsize = 0;
+		// for(int i = 0; i < unreserve; i++) {
+		// 	finalArr[finalsize++] = arr[i];
+		// }
+		// if(finalsize < vacancy) {
+		// 	for(int i =0; i < reserve; i ++) {
+		// 		finalArr[finalsize++] = resArr[i];
+		// 	}
+		// }
 
 		for(int k= 0; k < size; k++) {
 			System.out.println(arr[k]);
 		}
-		System.out.println();
-		// for(int i = 0)
+		// System.out.println();
+		// // for(int i = 0)
 		for(int i = 0; i < vacancy; i++) {
-			System.out.println(finalArr[i]);
+			System.out.println(arr[i]);
 		}
 		
 
