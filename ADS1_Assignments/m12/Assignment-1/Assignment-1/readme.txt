@@ -9,7 +9,7 @@ Following N lines represents student information
 
 each line of Student information representation:
 Student Name, Date of birth, subject1 marks, subject2 marks, subject3 marks, Total marks, Reservation category
-All the student information seperated with commas respectively
+All the student information seperated with commas respectivelys
 
 
 Output format:
