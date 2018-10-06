@@ -177,7 +177,7 @@ public class Solution {
 		for(int k= 0; k < size; k++) {
 			System.out.println(arr[k]);
 		}
-		// System.out.println();
+		System.out.println();
 		// // for(int i = 0)
 		for(int i = 0; i < vacancy; i++) {
 			System.out.println(arr[i]);
