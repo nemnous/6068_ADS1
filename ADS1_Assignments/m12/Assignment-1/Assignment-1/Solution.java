@@ -49,20 +49,21 @@ class SortbyCriteria implements Comparator<Student>
     // Used for sorting in ascending order
     public int compare(Student thi, Student that) 
     { 
-    	System.out.println(thi.total +" " +that.total);
-        int result = thi.total - that.total;
+    	// System.out.println(thi.total +" " +that.total);
+        int result = that.total- thi.total;
+        // return result;
 		if(result != 0) {
 			return result;
 		}
-		result = thi.s3 - that.s3;
+		result = that.s3 - thi.s3;
 		if(result != 0) {
 			return result;
 		}
-		result = thi.s2 - that.s2;
+		result = that.s2 - thi.s2;
 		if(result != 0 ) {
 			return result;
 		}
-		return thi.dob.compareTo(that.dob);
+		return that.dob.compareTo(thi.dob);
 	}
 }
 
@@ -125,7 +126,7 @@ class MergeSort<T> {
 // 		}
 // 		// MergeSort<Student> nani = new MergeSort();
 // 		// nani.sort(arr);
-// 		Arrays.sort(arr);
+// 		Arrays.sort(arr,new SortbyCriteria() );
 // 		// System.out.println(arr);
 // 		for(Student i : arr) {
 // 			System.out.println(i);
@@ -142,7 +143,7 @@ public class Solution {
 		int bc = scan.nextInt();
 		int sc = scan.nextInt();
 		int st = scan.nextInt();
-		Student[] arr = new Student[50];
+		Student[] arr = new Student[N];
 		int size = 0;
 		scan.nextLine();
 		for(int i = 0; i < N; i++) {
@@ -161,14 +162,20 @@ public class Solution {
 			// System.out.println(str[1]);
 			// size++;
 		}
-		for(int j = 0; j < size; j++) {
-			System.out.println(arr[j]);
-		}
+		// for(int j = 0; j < size; j++) {
+		// 	System.out.println(arr[j]);
+		// }
+		// System.out.println("AFter");
 		// MergeSort<Student> nani = new MergeSort();
 		Arrays.sort(arr, new SortbyCriteria()); 
-		// for(int k= 0; k < vacancy; k++) {
-		// 	System.out.println(arr[size-k]);
-		// }
+		for(int k= 0; k < size; k++) {
+			System.out.println(arr[k]);
+		}
+		System.out.println();
+		for(int i = 0; i < vacancy; i++) {
+			System.out.println(arr[i]);
+		}
+		
 
 	}
 }
