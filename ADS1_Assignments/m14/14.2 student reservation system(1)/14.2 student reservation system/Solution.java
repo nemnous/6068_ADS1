@@ -1,7 +1,7 @@
 import java.util.Scanner;
 /**
  * Class for solution.
- */   
+ */
 class Solution {
     /**
      * Constructs the object.
@@ -25,16 +25,21 @@ class Solution {
             for (int i = 0; i < noOfapplied; i++) {
                 String data = sc.nextLine();
                 String[] tokens = data.split(",");
+                final int two = 2;
+                final int three = 3;
+                final int four = 4;
+                final int five = 5;
+                final int six = 6;
                 m.addStudent(new Student(tokens[0],
-                 tokens[1], tokens[2], tokens[3],
-                  tokens[4], tokens[5], tokens[6]));
+                 tokens[1], tokens[two], tokens[three],
+                  tokens[four], tokens[five], tokens[six]));
             }
         m.InsertionSort();
         System.out.println(m);
         m.sort(noOfvacancies, noOfunres, noOfBC, noOfSC, noOfST);
         for (int i = 0; i < noOfvacancies; i++) {
-            System.out.println(m.getnewStudents(i).toString());       
+            System.out.println(m.getnewStudents(i).toString());
         }
-    }  
+    }
 }
 
