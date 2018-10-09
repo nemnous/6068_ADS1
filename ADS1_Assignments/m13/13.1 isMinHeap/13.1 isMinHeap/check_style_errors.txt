@@ -1,0 +1,11 @@
+Starting audit...
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m13\13.1 isMinHeap\13.1 isMinHeap\test.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m13\13.1 isMinHeap\13.1 isMinHeap\test.java:1: Missing a Javadoc comment. [JavadocType]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m13\13.1 isMinHeap\13.1 isMinHeap\test.java:1:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m13\13.1 isMinHeap\13.1 isMinHeap\test.java:1:7: Name 'test' must match pattern '^[A-Z][a-zA-Z0-9]*$'. [TypeName]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m13\13.1 isMinHeap\13.1 isMinHeap\test.java:2:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m13\13.1 isMinHeap\13.1 isMinHeap\test.java:2:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m13\13.1 isMinHeap\13.1 isMinHeap\test.java:2:33: Parameter args should be final. [FinalParameters]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m13\13.1 isMinHeap\13.1 isMinHeap\test.java:14:20: 'for' is not followed by whitespace. [WhitespaceAround]
+Audit done.
+Checkstyle ends with 8 errors.
