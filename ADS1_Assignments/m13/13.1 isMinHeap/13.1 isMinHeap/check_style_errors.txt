@@ -1,11 +1,2 @@
 Starting audit...
-[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m13\13.1 isMinHeap\13.1 isMinHeap\Solution.java:22:38: '200000' is a magic number. [MagicNumber]
-[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m13\13.1 isMinHeap\13.1 isMinHeap\Solution.java:76:14: Parameter i should be final. [FinalParameters]
-[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m13\13.1 isMinHeap\13.1 isMinHeap\Solution.java:97:26: Parameter arr should be final. [FinalParameters]
-[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m13\13.1 isMinHeap\13.1 isMinHeap\Solution.java:133:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m13\13.1 isMinHeap\13.1 isMinHeap\Solution.java:147:29: Parameter args should be final. [FinalParameters]
-[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m13\13.1 isMinHeap\13.1 isMinHeap\Solution.java:151: switch without "default" clause. [MissingSwitchDefault]
-[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m13\13.1 isMinHeap\13.1 isMinHeap\Solution.java:203: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m13\13.1 isMinHeap\13.1 isMinHeap\Solution.java:225: Line is longer than 80 characters (found 84). [LineLength]
 Audit done.
-Checkstyle ends with 8 errors.

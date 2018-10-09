@@ -19,7 +19,8 @@ class HeapSort<E extends Comparable<E>> {
      * Constructs the object.
      */
     HeapSort() {
-        array = (E[]) new Comparable[200000];
+        final int tl = 200000;
+        array = (E[]) new Comparable[tl];
         size = 0;
     }
 /**
@@ -73,7 +74,7 @@ class HeapSort<E extends Comparable<E>> {
  *
  * @param      i     the element to be added.
  */
-    void add(E i) {
+    void add(final E i) {
         // size++;
         // System.out.println("main " + Arrays.toString(array));
         array[++size] = i;
@@ -94,7 +95,7 @@ class HeapSort<E extends Comparable<E>> {
  *
  * @return     returns false or true.
  */
-    boolean compareThese(E[] arr) {
+    boolean compareThese(final E[] arr) {
         boolean temp = true;
         for (int i = 0; i < size; i++) {
             if (!this.array[i + 1].equals(arr[i])) {
@@ -130,11 +131,11 @@ class HeapSort<E extends Comparable<E>> {
 /**
  * Class for solution.
  */
-class Solution {
+final class Solution {
     /**
      * Constructs the object.
      */
-    Solution() {
+    private Solution() {
         /**
          * unused constructor.
          */
@@ -144,7 +145,7 @@ class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         String type = scan.nextLine();
         int testcases = scan.nextInt();
@@ -200,7 +201,8 @@ Float[] floats = Arrays.stream(arr).map(Float::valueOf).toArray(Float[]::new);
                     System.out.println(false);
                     continue;
                 } else {
-Double[] doubles = Arrays.stream(arr).map(Double::valueOf).toArray(Double[]::new);
+Double[] doubles;
+doubles = Arrays.stream(arr).map(Double::valueOf).toArray(Double[]::new);
                     for (Double x : doubles) {
                         obj2.add(x);
                     }
@@ -222,7 +224,8 @@ Double[] doubles = Arrays.stream(arr).map(Double::valueOf).toArray(Double[]::new
                     System.out.println(false);
                     continue;
                 } else {
-Integer[] intArr = Arrays.stream(arr).map(Integer::valueOf).toArray(Integer[]::new);
+Integer[] intArr;
+intArr = Arrays.stream(arr).map(Integer::valueOf).toArray(Integer[]::new);
                     for (Integer x : intArr) {
                         obj3.add(x);
                     }
@@ -232,7 +235,8 @@ Integer[] intArr = Arrays.stream(arr).map(Integer::valueOf).toArray(Integer[]::n
                 }
             }
             break;
-
+        default :
+            System.out.println("Where's The Food!");
         }
 
     }
