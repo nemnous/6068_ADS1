@@ -166,3 +166,4 @@ class Student implements Comparable<Student> {
         return this.name + "," + this.total + "," + this.category;
     }
 }
+
