@@ -1,173 +1,239 @@
-import java.util.*;
+import java.util.Arrays;
+import java.util.Scanner;
 
+/**
+ * Class for heap sort.
+ *
+ * @param      <E>   Generic class.
+ */
 class HeapSort<E extends Comparable<E>> {
+    /**
+     * array of generic type.
+     */
+    private E[] array;
+    /**
+     * size variable.
+     */
+    private int size;
+    /**
+     * Constructs the object.
+     */
+    HeapSort() {
+        array = (E[]) new Comparable[200000];
+        size = 0;
+    }
+/**
+ * moves the node towards up to the correct position.
+ */
+    void swim() {
+        int index = size;
 
-	E[] array;
-	int size;
-	HeapSort() {
-		array = (E[]) new Comparable[200000];
-		size = 0;
-	}
+        while ((index > 1) && (array[index / 2].compareTo(array[index]) > 0)) {
+            E t = array[index / 2];
+            array[index / 2] = array[index];
+            array[index] = t;
+            index /= 2;
+        }
+    }
+/**
+ * removes the object from the top.
+ *
+ * @return     returns element of the top node.
+ */
+    E remove() {
+        E temp = array[1];
+        array[1] = array[size--];
+        sink();
+        return temp;
+    }
+/**
+ * moves the node downwards the tree.
+ */
+    void sink() {
+        int index = 1;
+        int left = index * 2;
+        int right = index * 2 + 1;
+        while (left <= size) {
+            int minIndex = left;
+            if (right >= size && array[left].compareTo(array[right]) > 0) {
+                minIndex = right;
+            }
+            if (array[index].compareTo(array[minIndex]) > 0) {
+                E t = array[index];
+                array[index] = array[minIndex];
+                array[minIndex] = t;
+            } else {
+                break;
+            }
+        }
 
-	void swim() {
-		int index = size;
+    }
+/**
+ * adds element to the heap.
+ *
+ * @param      i     the element to be added.
+ */
+    void add(E i) {
+        // size++;
+        // System.out.println("main " + Arrays.toString(array));
+        array[++size] = i;
+        swim();
+    }
+/**
+ * prints the head order.
+ */
+    void print() {
 
-		while ((index > 1) && (array[index / 2].compareTo(array[index]) > 0)) {
-			E t = array[index / 2];
-			array[index / 2] = array[index];
-			array[index] = t;
-			index /= 2;
-		}
-	}
+        System.out.println(Arrays.toString(array));
 
-	E remove() {
-		E temp = array[1];
-		array[1] = array[size--];
-		sink();
-		return temp;
-	}
-
-	void sink() {
-		int index = 1;
-		int left = index * 2;
-		int right = index * 2 + 1;
-		while (left <= size) {
-			int minIndex = left;
-			if (right >= size && array[left].compareTo(array[right]) > 0) {
-				minIndex = right;
-			}
-			if (array[index].compareTo(array[minIndex]) > 0) {
-				E t = array[index];
-				array[index] = array[minIndex];
-				array[minIndex] = t;
-			} else {
-				break;
-			}
-		}
-
-	}
-
-	void add(E i) {
-		// size++;
-		// System.out.println("main " + Arrays.toString(array));
-		array[++size] = i;
-		swim();
-	}
-
-	void print() {
-
-		System.out.println(Arrays.toString(array));
-
-	}
-	boolean compareThese(E[] arr) {
-		boolean temp = true;
-		for (int i = 0; i < size; i++) {
-			if (!this.array[i + 1].equals(arr[i])) {
-				temp = false;
-				break;
-			}
-		}
-		return temp;
-	}
-	void clear() {
-		for (E i : array) {
-			i = null;
-		}
-		size = 0;
-	}
+    }
+/**
+ * compares the this.array to the input array.
+ *
+ * @param      arr   The arr
+ *
+ * @return     returns false or true.
+ */
+    boolean compareThese(E[] arr) {
+        boolean temp = true;
+        for (int i = 0; i < size; i++) {
+            if (!this.array[i + 1].equals(arr[i])) {
+                temp = false;
+                break;
+            }
+        }
+        return temp;
+    }
+    /**
+     * clears the array.
+     * "NOT WORKING"
+     */
+    void clear() {
+        for (E i : array) {
+            i = null;
+        }
+        size = 0;
+    }
+/**
+ * Sets the array.
+ */
+    void setArray() {
+        Arrays.fill(this.array, null);
+    }
+/**
+ * Sets the size.
+ */
+    void setSize() {
+        this.size = 0;
+    }
 }
-
+/**
+ * Class for solution.
+ */
 class Solution {
-	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
-		String type = scan.nextLine();
-		int testcases = scan.nextInt();
-		switch (type) {
-		case "String":
-			HeapSort<String> obj = new HeapSort();
-			// int testcases = scan.nextInt();
-			scan.nextLine();
-			for (int i = 0; i < testcases; i++) {
-				String[] arr = scan.nextLine().split(",");
-				for (String x : arr) {
-					obj.add(x);
-				}
+    /**
+     * Constructs the object.
+     */
+    Solution() {
+        /**
+         * unused constructor.
+         */
+    }
+    /**
+     * main function which drives the testcases.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String type = scan.nextLine();
+        int testcases = scan.nextInt();
+        switch (type) {
+        case "String":
+            HeapSort<String> obj = new HeapSort();
+            // int testcases = scan.nextInt();
+            scan.nextLine();
+            for (int i = 0; i < testcases; i++) {
+                String[] arr = scan.nextLine().split(",");
+                for (String x : arr) {
+                    obj.add(x);
+                }
 
-				System.out.println(obj.compareThese(arr));
-				Arrays.fill(obj.array, null);
-				obj.size = 0;
-			}
-			break;
-		case "Float":
-			HeapSort<Float> obj1 = new HeapSort();
-			// int testcases = scan.nextInt();
-			scan.nextLine();
-			for (int i = 0; i < testcases; i++) {
-				String[] arr = scan.nextLine().split(",");
-				// System.out.println(arr.length);
-				// System.out.println(Arrays.toString(arr));
-				if(arr.length == 1 && arr[0].equals("")) {
-					System.out.println(false);
-					continue;
+                System.out.println(obj.compareThese(arr));
+                obj.setArray();
+                obj.setSize();
+            }
+            break;
+        case "Float":
+            HeapSort<Float> obj1 = new HeapSort();
+            // int testcases = scan.nextInt();
+            scan.nextLine();
+            for (int i = 0; i < testcases; i++) {
+                String[] arr = scan.nextLine().split(",");
+                // System.out.println(arr.length);
+                // System.out.println(Arrays.toString(arr));
+                if (arr.length == 1 && arr[0].equals("")) {
+                    System.out.println(false);
+                    continue;
 
-				} else {
-					Float[] floats = Arrays.stream(arr).map(Float::valueOf).toArray(Float[]::new);
-					for (Float x : floats) {
-						obj1.add(x);
-					}
-					System.out.println(obj1.compareThese(floats));
-					Arrays.fill(obj1.array, null);
-					obj1.size = 0;
-				}
-			}
-			break;
-		case "Double":
+                } else {
+Float[] floats = Arrays.stream(arr).map(Float::valueOf).toArray(Float[]::new);
+                    for (Float x : floats) {
+                        obj1.add(x);
+                    }
+                    System.out.println(obj1.compareThese(floats));
+                    obj1.setArray();
+                    obj1.setSize();
+                }
+            }
+            break;
+        case "Double":
 
-			HeapSort<Double> obj2 = new HeapSort();
-			// int testcases = scan.nextInt();
-			scan.nextLine();
-			for (int i = 0; i < testcases; i++) {
-				String[] arr = scan.nextLine().split(",");
-				// System.out.println(arr.length);
-				// System.out.println(Arrays.toString(arr));
-				if(arr.length == 1 && arr[0].equals("")) {
-					System.out.println(false);
-					continue;
-				} else {
-					Double[] doubles = Arrays.stream(arr).map(Double::valueOf).toArray(Double[]::new);
-					for (Double x : doubles) {
-						obj2.add(x);
-					}
-					System.out.println(obj2.compareThese(doubles));
-					Arrays.fill(obj2.array, null);
-					obj2.size = 0;
-				}
-			}
-			break;
-		case "Integer":
-			HeapSort<Integer> obj3 = new HeapSort();
-			// int testcases = scan.nextInt();
-			scan.nextLine();
-			for (int i = 0; i < testcases; i++) {
-				String[] arr = scan.nextLine().split(",");
-				// System.out.println(arr.length);
-				// System.out.println(Arrays.toString(arr));
-				if(arr.length == 1 && arr[0].equals("")) {
-					System.out.println(false);
-					continue;
-				} else {
-					Integer[] intArr = Arrays.stream(arr).map(Integer::valueOf).toArray(Integer[]::new);
-					for (Integer x : intArr) {
-						obj3.add(x);
-					}
-					System.out.println(obj3.compareThese(intArr));
-					Arrays.fill(obj3.array, null);
-					obj3.size = 0;
-				}
-			}
-			break;
+            HeapSort<Double> obj2 = new HeapSort();
+            // int testcases = scan.nextInt();
+            scan.nextLine();
+            for (int i = 0; i < testcases; i++) {
+                String[] arr = scan.nextLine().split(",");
+                // System.out.println(arr.length);
+                // System.out.println(Arrays.toString(arr));
+                if (arr.length == 1 && arr[0].equals("")) {
+                    System.out.println(false);
+                    continue;
+                } else {
+Double[] doubles = Arrays.stream(arr).map(Double::valueOf).toArray(Double[]::new);
+                    for (Double x : doubles) {
+                        obj2.add(x);
+                    }
+                    System.out.println(obj2.compareThese(doubles));
+                    obj2.setArray();
+                    obj2.setSize();
+                }
+            }
+            break;
+        case "Integer":
+            HeapSort<Integer> obj3 = new HeapSort();
+            // int testcases = scan.nextInt();
+            scan.nextLine();
+            for (int i = 0; i < testcases; i++) {
+                String[] arr = scan.nextLine().split(",");
+                // System.out.println(arr.length);
+                // System.out.println(Arrays.toString(arr));
+                if (arr.length == 1 && arr[0].equals("")) {
+                    System.out.println(false);
+                    continue;
+                } else {
+Integer[] intArr = Arrays.stream(arr).map(Integer::valueOf).toArray(Integer[]::new);
+                    for (Integer x : intArr) {
+                        obj3.add(x);
+                    }
+                    System.out.println(obj3.compareThese(intArr));
+                    obj3.setArray();
+                    obj3.setSize();
+                }
+            }
+            break;
 
-		}
+        }
 
-	}
+    }
 }
