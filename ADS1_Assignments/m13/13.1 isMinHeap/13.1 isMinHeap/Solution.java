@@ -5,7 +5,7 @@ class HeapSort<E extends Comparable<E>> {
 	E[] array;
 	int size;
 	HeapSort() {
-		array = (E[]) new Comparable[15];
+		array = (E[]) new Comparable[200000];
 		size = 0;
 	}
 
@@ -61,8 +61,8 @@ class HeapSort<E extends Comparable<E>> {
 	}
 	boolean compareThese(E[] arr) {
 		boolean temp = true;
-		for(int i = 0; i < size; i++) {
-			if(!this.array[i+1].equals(arr[i])) {
+		for (int i = 0; i < size; i++) {
+			if (!this.array[i + 1].equals(arr[i])) {
 				temp = false;
 				break;
 			}
@@ -70,7 +70,7 @@ class HeapSort<E extends Comparable<E>> {
 		return temp;
 	}
 	void clear() {
-		for(E i : array){
+		for (E i : array) {
 			i = null;
 		}
 		size = 0;
@@ -81,27 +81,93 @@ class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String type = scan.nextLine();
-		switch(type) {
-			case "String":
-				HeapSort<String> obj = new HeapSort();
-				int testcases = scan.nextInt();
-				scan.nextLine();
-				for(int i =0; i < testcases; i++) {
-					String[] arr = scan.nextLine().split(",");
-					// System.out.println(Arrays.toString(arr));
-					for(String x : arr) {
-						obj.add(x);
-					}
+		int testcases = scan.nextInt();
+		switch (type) {
+		case "String":
+			HeapSort<String> obj = new HeapSort();
+			// int testcases = scan.nextInt();
+			scan.nextLine();
+			for (int i = 0; i < testcases; i++) {
+				String[] arr = scan.nextLine().split(",");
+				for (String x : arr) {
+					obj.add(x);
+				}
 
 				System.out.println(obj.compareThese(arr));
-				// obj.clear();
 				Arrays.fill(obj.array, null);
 				obj.size = 0;
-				// System.out.println(Arrays.toString(obj.array));
-				}
-				break;
+			}
+			break;
+		case "Float":
+			HeapSort<Float> obj1 = new HeapSort();
+			// int testcases = scan.nextInt();
+			scan.nextLine();
+			for (int i = 0; i < testcases; i++) {
+				String[] arr = scan.nextLine().split(",");
+				// System.out.println(arr.length);
+				// System.out.println(Arrays.toString(arr));
+				if(arr.length == 1 && arr[0].equals("")) {
+					System.out.println(false);
+					continue;
 
+				} else {
+					Float[] floats = Arrays.stream(arr).map(Float::valueOf).toArray(Float[]::new);
+					for (Float x : floats) {
+						obj1.add(x);
+					}
+					System.out.println(obj1.compareThese(floats));
+					Arrays.fill(obj1.array, null);
+					obj1.size = 0;
+				}
+			}
+			break;
+		case "Double":
+
+			HeapSort<Double> obj2 = new HeapSort();
+			// int testcases = scan.nextInt();
+			scan.nextLine();
+			for (int i = 0; i < testcases; i++) {
+				String[] arr = scan.nextLine().split(",");
+				// System.out.println(arr.length);
+				// System.out.println(Arrays.toString(arr));
+				if(arr.length == 1 && arr[0].equals("")) {
+					System.out.println(false);
+					continue;
+				} else {
+					Double[] doubles = Arrays.stream(arr).map(Double::valueOf).toArray(Double[]::new);
+					for (Double x : doubles) {
+						obj2.add(x);
+					}
+					System.out.println(obj2.compareThese(doubles));
+					Arrays.fill(obj2.array, null);
+					obj2.size = 0;
+				}
+			}
+			break;
+		case "Integer":
+			HeapSort<Integer> obj3 = new HeapSort();
+			// int testcases = scan.nextInt();
+			scan.nextLine();
+			for (int i = 0; i < testcases; i++) {
+				String[] arr = scan.nextLine().split(",");
+				// System.out.println(arr.length);
+				// System.out.println(Arrays.toString(arr));
+				if(arr.length == 1 && arr[0].equals("")) {
+					System.out.println(false);
+					continue;
+				} else {
+					Integer[] intArr = Arrays.stream(arr).map(Integer::valueOf).toArray(Integer[]::new);
+					for (Integer x : intArr) {
+						obj3.add(x);
+					}
+					System.out.println(obj3.compareThese(intArr));
+					Arrays.fill(obj3.array, null);
+					obj3.size = 0;
+				}
+			}
+			break;
 
 		}
+
 	}
 }

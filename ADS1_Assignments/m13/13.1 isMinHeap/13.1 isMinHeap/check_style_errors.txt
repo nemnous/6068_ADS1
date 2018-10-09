@@ -6,6 +6,6 @@ Starting audit...
 [ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m13\13.1 isMinHeap\13.1 isMinHeap\test.java:2:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m13\13.1 isMinHeap\13.1 isMinHeap\test.java:2:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m13\13.1 isMinHeap\13.1 isMinHeap\test.java:2:33: Parameter args should be final. [FinalParameters]
-[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m13\13.1 isMinHeap\13.1 isMinHeap\test.java:14:20: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m13\13.1 isMinHeap\13.1 isMinHeap\test.java:14:20: 'for' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
 Checkstyle ends with 8 errors.
