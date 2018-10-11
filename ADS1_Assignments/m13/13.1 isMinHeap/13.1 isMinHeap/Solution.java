@@ -18,8 +18,10 @@ class HeapSort<E extends Comparable<E>> {
     /**
      * Constructs the object.
      */
+    // array - new int[10]
     HeapSort() {
         final int tl = 200000;
+        // array = new E[10];
         array = (E[]) new Comparable[tl];
         size = 0;
     }
@@ -56,7 +58,7 @@ class HeapSort<E extends Comparable<E>> {
         int right = index * 2 + 1;
         while (left <= size) {
             int minIndex = left;
-            if (right >= size && array[left].compareTo(array[right]) > 0) {
+            if (array[left].compareTo(array[right]) > 0) {
                 minIndex = right;
             }
             if (array[index].compareTo(array[minIndex]) > 0) {
