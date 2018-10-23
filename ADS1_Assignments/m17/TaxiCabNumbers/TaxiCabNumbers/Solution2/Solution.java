@@ -11,7 +11,6 @@ public final class Solution {
     /**
      * main method to drive the program.
      * @param      args  The arguments
-     * The time complexity for this method is O(2N)
      */
     public static void main(final String[] args) {
         final int sixhun = 600;
@@ -48,3 +47,4 @@ public final class Solution {
         }
     }
 }
+
