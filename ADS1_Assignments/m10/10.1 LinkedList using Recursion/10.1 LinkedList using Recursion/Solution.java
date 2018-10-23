@@ -1,83 +1,41 @@
 import java.util.Scanner;
 
 /**
-
  * Class for solution.
-
  */
-
 public final class Solution {
 
     /**
-
      * Constructs the object.
-
      */
-
     private Solution() {
-
-
 
     }
 
     /**
-
-     * main method.
-
-     * @param      args  The arguments
-
+     * gets input from user and calls the list func.
+     *
+     * @param      args  The command line arguments
      */
-
     public static void main(final String[] args) {
-
-        LinkedList l = new LinkedList();
-
-        Scanner sc = new Scanner(System.in);
-
-        while (sc.hasNext()) {
-
-            String[] tokens = sc.nextLine().split(" ");
-
+        Scanner scan = new Scanner(System.in);
+        LinkedList<Integer> list = new LinkedList<Integer>();
+        while (scan.hasNext()) {
+            String[] tokens = scan.nextLine().split(" ");
             switch (tokens[0]) {
-
-            case "insertAt":
-
-                try {
-
-                    l.head = l.insertAt(l.head,
-
-                        new Node(Integer.parseInt(tokens[2])),
-
-                        Integer.parseInt(tokens[1]), 0);
-
-                    l.size++;
-
-                    l.display();
-
-                } catch (Exception e) {
-
-                    System.out.println(e.getMessage());
-
-                }
-
-                break;
-
-            case "reverse":
-
-                l.reverse(l.head, null);
-
-                l.display();
-
-                break;
-
-            default:
-
-                break;
-
+                case "insertAt":
+                    list.insert(Integer.parseInt(tokens[1]),
+                        Integer.parseInt(tokens[2]));
+                    break;
+                case "reverse":
+                    list.reverse();
+                    break;
+                default:
+                    break;
             }
-
         }
-
     }
+
+
 
 }
