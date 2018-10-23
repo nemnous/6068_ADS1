@@ -21,9 +21,9 @@ final class Solution {
      * Time complexity : O(n)
      */
     public static void main(final String[] args) {
-    	/**
-    	 * final constant variable.
-    	 */
+        /**
+         * final constant variable.
+         */
         final int three = 3;
         final int four = 4;
 
