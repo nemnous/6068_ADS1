@@ -47,6 +47,7 @@ class Solution {
 		String[] magArr = scan.nextLine().split(" ");
 		String[] ranArr = scan.nextLine().split(" ");
 		HelpingHarold theKidnapper = new HelpingHarold(magArr, ranArr);
+		System.out.println(theKidnapper.isUntraceable());
 		if(theKidnapper.isUntraceable()) {
 			System.out.println("Yes");
 		} else {
