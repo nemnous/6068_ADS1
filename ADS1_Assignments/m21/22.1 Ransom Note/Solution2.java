@@ -44,7 +44,7 @@ class Solution2 {
             RansomNote.put(key, RansomNote.get(key) + 1);
         }
         HelpingHarold theKidnapper = new HelpingHarold(Magazine, RansomNote);
-		System.out.println(theKidnapper.isUntraceable());
+		// System.out.println(theKidnapper.isUntraceable());
 		if(theKidnapper.isUntraceable()) {
 			System.out.println("Yes");
 		} else {
