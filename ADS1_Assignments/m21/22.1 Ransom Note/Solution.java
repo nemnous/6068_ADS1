@@ -17,7 +17,11 @@ class HelpingHarold {
 			}
 		}
 	}
-
+	// void print() {
+	// 	System.out.println("Maga");
+	// 	for(String key : Magazine.keys())
+	// 		System.out.println("Key: " + key + "Value: " + Magazine.get(key));
+	// }
 	private void setNote(String[] NoteStr) {
 		for (String Key : NoteStr) {
 			if(!RansomNote.contains(Key)) {
@@ -27,7 +31,6 @@ class HelpingHarold {
 			}
 		}
 	}
-	
 	boolean isUntraceable() {
 		for(String ranWord : RansomNote.keys()) {
 			if(!Magazine.contains(ranWord) || Magazine.get(ranWord) < RansomNote.get(ranWord)){
@@ -53,6 +56,7 @@ class Solution {
 		} else {
 			System.out.println("No");
 		}
+		// theKidnapper.print();
 
 	}
 }

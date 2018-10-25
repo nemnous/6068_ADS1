@@ -253,22 +253,22 @@ public class LinearProbingHashST<Key, Value> {
     //     LinearProbingHashST<String, Integer> st = new LinearProbingHashST<String, Integer>();
     //     LinearProbingHashST<String, Integer> st1 = new LinearProbingHashST<String, Integer>();
 
-    //     // for (int i = 0; !StdIn.isEmpty(); i++) {
-    //     //     String key = StdIn.readString();
-    //     //     st.put(key, i);
-    //     // }
+        // for (int i = 0; !StdIn.isEmpty(); i++) {
+        //     String key = StdIn.readString();
+        //     st.put(key, i);
+        // }
         
     //     Scanner scan = new Scanner(System.in);
-    //     int MagWords = scan.nextInt();
-    //     int ransomWords = scan.nextInt();
-    //     for(int i = 0; i <MagWords ; i++) {
-    //         String key = scan.next();
-    //         st.put(key, i);
-    //     }
-    //     for(int i = 0; i < ransomWords ; i++) {
-    //         String key = scan.next();
-    //         st1.put(key, i);
-    //     }
+        // int MagWords = scan.nextInt();
+        // int ransomWords = scan.nextInt();
+        // for(int i = 0; i <MagWords ; i++) {
+        //     String key = scan.next();
+        //     st.put(key, i);
+        // }
+        // for(int i = 0; i < ransomWords ; i++) {
+        //     String key = scan.next();
+        //     st1.put(key, i);
+        // }
 
     //     // print keys
     //     System.out.println("first keys");
