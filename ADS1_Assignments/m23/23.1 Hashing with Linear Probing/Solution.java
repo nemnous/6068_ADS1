@@ -4,16 +4,16 @@ import java.util.Scanner;
  * this takes the input from the console.
  * And return the output.
  */
-class Solution {
+final class Solution {
 
-	/**
-	 * Constructs the object.
-	 */
-	Solution() {
-		/**
-		 * unused constructor.
-		 */
-	}
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        /**
+         * unused constructor.
+         */
+    }
 
     /**
      * this is the main function and the excecution starts here.
