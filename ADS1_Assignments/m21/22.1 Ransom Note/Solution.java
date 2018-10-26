@@ -1,62 +1,60 @@
 import java.util.Scanner;
-class HelpingHarold {
-	private LinearProbingHashST<String, Integer> Magazine = new LinearProbingHashST<String, Integer>();
-	private LinearProbingHashST<String, Integer> RansomNote = new LinearProbingHashST<String, Integer>();
-
-	HelpingHarold(String[] MagStr, String[] NoteStr) {
-		this.setMag(MagStr);
-		this.setNote(NoteStr);
-	}
-
-	private void setMag(String[] MagStr) {
-		for (String Key : MagStr) {
-			if(!Magazine.contains(Key)) {
-				Magazine.put(Key, 1);
-			} else {
-				Magazine.put(Key, Magazine.get(Key) + 1);
-			}
-		}
-	}
-	// void print() {
-	// 	System.out.println("Maga");
-	// 	for(String key : Magazine.keys())
-	// 		System.out.println("Key: " + key + "Value: " + Magazine.get(key));
-	// }
-	private void setNote(String[] NoteStr) {
-		for (String Key : NoteStr) {
-			if(!RansomNote.contains(Key)) {
-				RansomNote.put(Key, 1);
-			} else {
-				RansomNote.put(Key, RansomNote.get(Key) + 1);
-			}
-		}
-	}
-	boolean isUntraceable() {
-		for(String ranWord : RansomNote.keys()) {
-			if(!Magazine.contains(ranWord) || Magazine.get(ranWord) < RansomNote.get(ranWord)){
-				return false;
-			}
-		}
-		return true;
-	}
-}
-
-
-class Solution {
-	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
-		int magWords = scan.nextInt();
-		int ranWords = scan.nextInt();
-		String[] magArr = scan.nextLine().split(" ");
-		String[] ranArr = scan.nextLine().split(" ");
-		HelpingHarold theKidnapper = new HelpingHarold(magArr, ranArr);
-		System.out.println(theKidnapper.isUntraceable());
-		if(theKidnapper.isUntraceable()) {
-			System.out.println("Yes");
-		} else {
-			System.out.println("No");
-		}
-		// theKidnapper.print();
-
-	}
+/**
+ * Class for solution.
+ */
+final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+    }
+    /**
+     * main method that drives the program.
+     * @param      args  The arguments
+     * Time complexity for this method is O(N).
+     */
+    public static void main(final String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String[] inp = sc.nextLine().split(" ");
+        int m = Integer.parseInt(inp[0]);
+        int n = Integer.parseInt(inp[1]);
+        String[] magazine = sc.nextLine().split(" ");
+        String[] note = sc.nextLine().split(" ");
+        SeparateChainingHashST<String, Integer> mag =
+            new SeparateChainingHashST<String, Integer>();
+        SeparateChainingHashST<String, Integer> notes =
+            new SeparateChainingHashST<String, Integer>();
+        for (int i = 0; i < m; i++) {
+            mag.put(magazine[i], 0);
+        }
+        for (int j = 0; j < n; j++) {
+            notes.put(note[j], 0);
+        }
+        for (int i = 0; i < m; i++) {
+            int count = mag.get(magazine[i]);
+            if (mag.contains(magazine[i])) {
+                mag.put(magazine[i], count + 1);
+            } else {
+                mag.put(magazine[i], 1);
+            }
+        }
+        for (int j = 0; j < n; j++) {
+            if (!mag.contains(note[j])) {
+                System.out.println("No");
+                return;
+            } else if (mag.contains(note[j])) {
+                int num = notes.get(note[j]);
+                if (notes.contains(note[j])) {
+                    notes.put(note[j], num + 1);
+                } else {
+                    notes.put(note[j], 1);
+                }
+                if (notes.get(note[j]) > mag.get(note[j])) {
+                    System.out.println("No");
+                    return;
+                }
+            }
+        }
+        System.out.println("Yes");
+    }
 }

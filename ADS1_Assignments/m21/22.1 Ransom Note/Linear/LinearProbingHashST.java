@@ -70,7 +70,7 @@ public class LinearProbingHashST<Key, Value> {
 
     /**
      * Returns the number of key-value pairs in this symbol table.
-     *
+     * time complexity 1.
      * @return the number of key-value pairs in this symbol table
      */
     public int size() {
@@ -79,7 +79,7 @@ public class LinearProbingHashST<Key, Value> {
 
     /**
      * Returns true if this symbol table is empty.
-     *
+     * time complexity 1.
      * @return {@code true} if this symbol table is empty;
      *         {@code false} otherwise
      */
@@ -89,7 +89,7 @@ public class LinearProbingHashST<Key, Value> {
 
     /**
      * Returns true if this symbol table contains the specified key.
-     *
+     * time complexity N.
      * @param  key the key
      * @return {@code true} if this symbol table contains {@code key};
      *         {@code false} otherwise
@@ -123,7 +123,7 @@ public class LinearProbingHashST<Key, Value> {
      * value with the new value if the symbol table already contains the specified key.
      * Deletes the specified key (and its associated value) from this symbol table
      * if the specified value is {@code null}.
-     *
+     * time complexity N.
      * @param  key the key
      * @param  val the value
      * @throws IllegalArgumentException if {@code key} is {@code null}
