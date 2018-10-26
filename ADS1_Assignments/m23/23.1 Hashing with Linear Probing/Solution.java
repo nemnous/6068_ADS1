@@ -5,13 +5,23 @@ import java.util.Scanner;
  * And return the output.
  */
 class Solution {
+
+	/**
+	 * Constructs the object.
+	 */
+	Solution() {
+		/**
+		 * unused constructor.
+		 */
+	}
+
     /**
      * this is the main function and the excecution starts here.
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
-        LinearProbingHashST<Character, Integer> LPHST
+    public static void main(final String[] args) {
+        LinearProbingHashST<Character, Integer> linearObj
             = new LinearProbingHashST<Character, Integer>();
         Scanner scan = new Scanner(System.in);
         int testcases = scan.nextInt();
@@ -20,23 +30,23 @@ class Solution {
             String[] inp = scan.nextLine().split(" ");
             switch (inp[0]) {
             case "put":
-                LPHST.put(inp[1].charAt(0), Integer.parseInt(inp[2]));
+                linearObj.put(inp[1].charAt(0), Integer.parseInt(inp[2]));
                 break;
 
             case "get":
-                System.out.println(LPHST.get(inp[1].charAt(0)));
+                System.out.println(linearObj.get(inp[1].charAt(0)));
                 break;
 
             case "display":
                 String str = "{";
-                for (char s : LPHST.keys()) {
-                    str += (s + ":" + LPHST.get(s) + ", ");
+                for (char s : linearObj.keys()) {
+                    str += (s + ":" + linearObj.get(s) + ", ");
                 }
                 str = str.replaceAll(", $", "");
                 System.out.println(str + "}");
                 break;
             case "delete":
-                LPHST.delete(inp[1].charAt(0));
+                linearObj.delete(inp[1].charAt(0));
                 break;
 
             default:
