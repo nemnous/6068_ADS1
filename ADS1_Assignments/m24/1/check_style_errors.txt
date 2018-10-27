@@ -1,5 +1,6 @@
 Starting audit...
 [ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\1\Solution.java:2: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
 [ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\1\Solution.java:3: Missing a Javadoc comment. [JavadocType]
 [ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\1\Solution.java:4:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\1\Solution.java:4:9: Missing a Javadoc comment. [JavadocVariable]
@@ -22,13 +23,12 @@ Starting audit...
 [ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\1\Solution.java:18:33: Parameter args should be final. [FinalParameters]
 [ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\1\Solution.java:19: Line is longer than 80 characters (found 110). [LineLength]
 [ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\1\Solution.java:19:53: '>' is preceded with whitespace. [GenericWhitespace]
-[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\1\Solution.java:25:20: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\1\Solution.java:28: Line is longer than 80 characters (found 115). [LineLength]
-[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\1\Solution.java:36:20: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\1\Solution.java:38: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\1\Solution.java:39: switch without "default" clause. [MissingSwitchDefault]
-[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\1\Solution.java:39:31: 'switch' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\1\Solution.java:41: Line is longer than 80 characters (found 106). [LineLength]
-[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\1\Solution.java:44: Line is longer than 80 characters (found 107). [LineLength]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\1\Solution.java:26:20: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\1\Solution.java:29: Line is longer than 80 characters (found 115). [LineLength]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\1\Solution.java:37:20: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\1\Solution.java:40: switch without "default" clause. [MissingSwitchDefault]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\1\Solution.java:40:31: 'switch' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\1\Solution.java:42: Line is longer than 80 characters (found 106). [LineLength]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\1\Solution.java:45: Line is longer than 80 characters (found 107). [LineLength]
 Audit done.
 Checkstyle ends with 31 errors.

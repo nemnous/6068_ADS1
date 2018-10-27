@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+import java.util.*;
 class Student {
 	String name;
 	int rollNumber;
@@ -21,6 +21,7 @@ class Solution {
 		Scanner scan = new Scanner(System.in);
 
 		int testCases = scan.nextInt();
+		scan.nextLine();
 
 		for(int i = 0; i < testCases; i++) {
 			String[] temp = scan.nextLine().split(",");
@@ -32,10 +33,10 @@ class Solution {
 		}
 
 		int noQuery = scan.nextInt();
-
+		scan.nextLine();
 		for(int i = 0; i < noQuery; i++) {
 			String[] query = scan.nextLine().split(" ");
-			
+			// System.out.println(Arrays.toString(query));
 			switch(query[2]) {
 				case "1":
 					System.out.println(linearST.get(Integer.parseInt(query[1])).name);
