@@ -80,12 +80,12 @@ Student stu = new Student(Integer.parseInt(temp[0]), temp[1], marks);
                 case "BE":
                     Double t1 = Double.parseDouble(str[1]);
                     Double t2 = Double.parseDouble(str[2]);
-                    for(Double d : binST.keys(t1, 100.0)) {
+                    for(Double d : binST.keys(t1, t2)) {
                         System.out.println(binST.get(d).getName());
                     }
-                    for(Double d : binST.keys(0.0, t2)) {
-                        System.out.println(binST.get(d).getName());
-                    }
+                    // for(Double d : binST.keys(0.0, t2)) {
+                    //     System.out.println(binST.get(d).getName());
+                    // }
             }
 
         }
