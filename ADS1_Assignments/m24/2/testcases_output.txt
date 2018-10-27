@@ -5,14 +5,14 @@ Rivest
 Dan
 Abegg
 Your Output: 
-76.7
-78.4
-85.5
-88.5
-88.7
-91.6
-98.3
-99.2
+Clark
+Rivest
+Dan
+Peter
+Alice
+Adams
+Wayne
+Charles
 Megon
 Daniel
 Tim
@@ -26,16 +26,16 @@ Neil
 Clark
 Rivest
 Dan
-65.4
-76.3
-76.7
-78.4
-85.5
-88.5
-88.7
-91.6
-98.3
-99.2
+Abegg
+Neil
+Clark
+Rivest
+Dan
+Peter
+Alice
+Adams
+Wayne
+Charles
 Megon
 Daniel
 Tim
@@ -94,23 +94,23 @@ Tim Cahill
 Abegg
 Brian Caffrey
 Your Output: 
-76.4
-76.5
-77.3
-78.2
-85.6
-87.6
-88.3
-88.4
-88.8
-90.6
-91.2
-94.5
-98.3
-98.7
-99.3
-99.4
-100.0
+Clark
+Rhian Cahill
+Sasha Cagen
+Rivest
+Access
+Rachel Caine
+Alice
+Biba Caggiano
+Peter
+David Cabot
+Adams
+Yassi
+Wayne
+Jonathan Cainer
+Jeannette Caines
+Charles
+Bob
 Steve Cafferty
 Hank
 Deborah Cadbury
@@ -920,295 +920,6 @@ Marianna Palk
 Thelma Page
 Vicky Hales-Dutton
 Your Output: 
-65.06
-66.2
-66.25
-66.37
-68.0
-69.17
-69.29
-69.73
-69.74
-69.82
-70.49
-71.27
-71.85
-72.14
-72.19
-72.2
-72.38
-72.86
-73.35
-73.45
-73.47
-73.58
-73.72
-74.05
-74.62
-74.64
-75.0
-75.18
-75.6
-75.86
-76.01
-76.29
-76.48
-76.56
-76.93
-77.69
-78.56
-78.96
-79.09
-79.31
-79.38
-79.49
-79.51
-79.58
-79.87
-80.31
-81.1
-81.65
-81.72
-82.13
-82.63
-83.43
-83.66
-84.28
-84.43
-84.78
-85.27
-85.55
-85.69
-85.84
-85.89
-86.65
-87.0
-87.16
-87.26
-87.31
-87.6
-87.74
-88.05
-88.39
-88.48
-89.14
-89.47
-89.61
-89.68
-89.85
-90.36
-90.69
-90.74
-90.78
-90.91
-91.15
-91.38
-91.46
-91.51
-91.92
-92.0
-92.85
-93.21
-93.22
-93.81
-93.95
-93.97
-94.75
-95.0
-95.79
-96.83
-97.54
-97.83
-98.13
-98.39
-98.56
-98.7
-98.87
-99.38
-99.46
-99.65
-99.9
-Ed J. Paine
-Macky Pamintuan
-Laurence Packer
-John W. Jacobs M.D.
-Michael Panckridge
-Margaret Peterson Haddix
-Thomas Hackett
-Emma Page
-Elaine Hall
-Margaret Haffner
-June Hadley
-Melissa P
-Kathryn Jacobi
-Chris Pallace
-William Hague
-Mary Curran Hackett
-Sheila Hale
-Jeremy Jackson
-Harvey Mackay
-Gildart Jackson
-Jenna Bush Hager
-Cindy Pan
-Danielle Paige
-Korey Jackson
-John Hale
-Katie MacAlister
-Bonnie MacBird
-Derek Jacobi
-Joseph A. Maciariello
-David Packard
-Meredith Jaeger
-Rebecca Pacheco
-Scott Palmer
-Nathan Hale
-Pamela Haag
-Bernie Mac
-Amanda Hall
-Marianna Palka
-Madhur Jaffrey
-Peter Haining
-Bonner Paddock
-Rona Jaffe
-Alison Mackey
-Jim Paillot
-Sara MacDonald
-Daniel Paisner
-Kristin Hahn
-Aggie MacKenzie
-Philip MacDonald
-Colin Jack
-Tracy Hafen
-Shvetha Jaishankar
-Michele Jaffe
-Emma Jackson
-Peter Jackson
-Magnus MacFarlane-Barrow
-Ian Jackman
-Kellie Hailes
-Kennell Jackson
-Richard Jackson
-Carrington MacDuffie
-Katherine Hall Page
-Chuck Hagel
-T. T. Macan
-Catherine Macaulay
-Frank Pacetta
-Iva-Marie Palmer
-Andrew Jacobson
-Carla Hall
-Michael Hague
-Albert Jack
-Rachel Jacobs
-Stuart MacBride
-Jerome A. Jackson
-Barry Pain
-Robin MacArthur
-Betty MacDonald
-Bonnie MacBird
-Amanda Mackenzie Stuart
-Meredith L. Jacobs
-Kevin MacAllister
-Cynthia Jabar
-Howard Jacobson
-D. J. MacHale
-Saskia Maarleveld
-Louise Mack
-Sarah Palin
-Marylin Hafner
-Charlie Haas
-Mick Jackson
-Bethany Palmer
-Melanie MacHugh
-Bethany Hagen
-Tiffany D. Jackson
-Mark Palmer
-Adele Jacques
-Auston Habershaw
-Chris Packham
-Nafisa Haji
-Rebecca Paley
-Marilyn Hagerty
-Shaili Jain M.D.
-Al Jaffee
-Nasim Marie Jafry
-Laura Holmes Haddad
-David H. Hackworth
-Shelley Jackson
-Daniel Palmer
-Marianna Palk
-Thelma Page
-Vicky Hales-Dutton
-Guru Jagat
-Rawi Hage
-Kathryn Miller Haines
-Stuart MacBride
-Ruth H. Jacobs
-Steve Hagen
-Margie Palatini
-Don Hagen
-Steve Jackson
-Anthony Haden-Guest
-Dana Jacobi
-W. G. Hale
-Carlos Pan
-Debra W. Haffner
-George Jacobs
-Niccolo Machiavelli
-Alan Jacobs
-Kate Jacoby
-Olivia Mace
-David Halberstam
-Colleen Padilla
-Kathleen Hale
-Allan Hall
-Richard Jacoby
-William Haefeli
-Jennifer Haigh
-Douglas Palmer
-Gordon Jack
-Ron Padgett
-Amanda Maciel
-Christopher N. Page
-Ellie Macdonald
-Portia MacIntosh
-Kathryn Ma
-Piers A. Jacob
-Norm MacDonald
-Tracey Jackson
-Helena S. Paige
-Penny Palmano
-Ellen Jackson
-Gracie MacGregor
-Gerry Hadden
-A.N.D Haksar
-James Graham Hale
-Merle Haggard
-Steven Pacey
-Edward Paice
-Shannon Hale
-Norm Macdonald
-Michael Page
-George Packer
-Steph Jagger
-Roger O.M.D. Jahnke
-Simon Jacobson
-Warren Mackenzie
-Tim Andres Pabon
-Sylvie Haisman
-Nate Jackson
-Linden MacIntyre
-Juliette MacIver
-Madeleine Maby
-Dana C. Jack
-Bristol Palin
-Aparna Jain
-Taylor Hackford
-David Haig
-Lorrie Mack
-Sophie Jaff
-Bradley Jackson
-Robert Ian MacKenzie
 Ruby Jackson
 Charles B. Macdonald
 Greg Page
@@ -1219,104 +930,104 @@ David Jacobs
 Jeannette Haien
 Daniel Hahn
 Sara Palacios
-70.49
-71.27
-71.85
-72.14
-72.19
-72.2
-72.38
-72.86
-73.35
-73.45
-73.47
-73.58
-73.72
-74.05
-74.62
-74.64
-75.0
-75.18
-75.6
-75.86
-76.01
-76.29
-76.48
-76.56
-76.93
-77.69
-78.56
-78.96
-79.09
-79.31
-79.38
-79.49
-79.51
-79.58
-79.87
-80.31
-81.1
-81.65
-81.72
-82.13
-82.63
-83.43
-83.66
-84.28
-84.43
-84.78
-85.27
-85.55
-85.69
-85.84
-85.89
-86.65
-87.0
-87.16
-87.26
-87.31
-87.6
-87.74
-88.05
-88.39
-88.48
-89.14
-89.47
-89.61
-89.68
-89.85
-90.36
-90.69
-90.74
-90.78
-90.91
-91.15
-91.38
-91.46
-91.51
-91.92
-92.0
-92.85
-93.21
-93.22
-93.81
-93.95
-93.97
-94.75
-95.0
-95.79
-96.83
-97.54
-97.83
-98.13
-98.39
-98.56
-98.7
-98.87
-99.38
-99.46
-99.65
-99.9
+Charles Panati
+Fiona MacKenzie
+Mark Haddon
+Julie Mac
+James Macdonald
+Jane MacDougall
+Tim Page
+Harvey B. Mackay
+Jennifer Page
+Audrey Mackaman
+Burton L. Mack
+Jessie Haas
+Joshilyn Jackson
+Melissa Jacobs
+Michael Hale
+Jeff MacGregor
+Fiona MacDonald
+Katharina Hagena
+Sarah Jacoby
+Anna-Liisa Hakkarainen
+Joie Jager-Hyman
+Alex Palmer
+David Hagedorn
+M MacCallum
+James B. Maas
+Manoj Pandey
+John W. Jacobs
+Thomas Paine
+Richard Mabey
+Jo Jackson King
+Nick Page
+Kinley MacGregor
+Liza Palmer
+Libby Jackson
+Kristin Halbrook
+Virginia Macgregor
+Betty Halbreich
+Cindy Dr. Pan
+Bruce Hale
+Jeff Mack
+Annie Maccoby
+Heather Hach
+Jean Reynolds Page
+Jamuna Pai
+Myla Jackson
+Kady MacDonald Denton
+Roger Lea MacBride
+Andy Paciorek
+J.D. Jackson
+Simcha Jacobovici
+Niall Mackenzie
+Ann-Marie MacDonald
+Yossi Klein Halevi
+Gene Hackman
+Tony Macaulay
+Fiona Palmer
+Lynn F. Jacobs
+Araminta Hall
+Sara Mackenzie
+Margaret Read MacDonald
+Carla Jablonski
+Mary Downing Hahn
+Robert Macfarlane
+Robert Jackson
+Jane Paley
+Emily Hainsworth
+Sari Padorr
+Mary MacCracken
+Michael Haag
+Maxwell Mackenzie
+Kevin MacAllister
+Michael Jaime-Becerra
+David Macfarlane
+Jake Page
+John Hornor Jacobs
+H. JACKSON
+Peter Maas
+Keach Hagey
+Sean Padraic
+Sang Pak
+Thomas Pakenham
+Terrence J
+Shane Jacobson
+Hannah Paasch
+Svetlana Palmer
+Helen Palmer
+Stuart B. MacBride
+Wayne Pacelle
+H3CZ
+John Jacobs
+Alison Mackey PhD
+Amanda Mackenzie Stuart
+Elaine Pagels
+Tessa Hadley
+Sammy Hagar
+Keith Habersberger
+Yamile Saied Méndez
+Namita Jain
 Ed J. Paine
 Macky Pamintuan
 Laurence Packer
@@ -1543,199 +1254,488 @@ Kinley MacGregor
 Liza Palmer
 Libby Jackson
 Kristin Halbrook
-35.14
-35.15
-35.46
-35.47
-35.6
-35.71
-35.74
-35.81
-36.24
-36.4
-36.88
-37.03
-38.7
-39.15
-39.78
-40.06
-40.1
-40.43
-40.94
-40.95
-41.03
-41.33
-42.81
-43.06
-43.12
-43.33
-43.91
-44.22
-44.63
-45.09
-45.28
-45.32
-45.39
-46.77
-46.81
-47.14
-47.48
-48.28
-48.67
-48.77
-48.84
-49.4
-49.47
-49.66
-50.24
-50.59
-50.75
-50.8
-50.88
-50.89
-51.43
-52.12
-52.26
-52.46
-53.48
-53.79
-54.08
-54.45
-54.82
-55.34
-56.43
-56.76
-57.53
-57.7
-57.79
-59.14
-59.62
-59.63
-59.67
-59.69
-59.95
-60.27
-60.37
-60.54
-61.06
-61.23
-61.6
-62.0
-62.03
-62.17
-62.74
-62.8
-63.33
-63.57
-64.08
-65.06
-66.2
-66.25
-66.37
-68.0
-69.17
-69.29
-69.73
-69.74
-69.82
-70.49
-71.27
-71.85
-72.14
-72.19
-72.2
-72.38
-72.86
-73.35
-73.45
-73.47
-73.58
-73.72
-74.05
-74.62
-74.64
-75.0
-75.18
-75.6
-75.86
-76.01
-76.29
-76.48
-76.56
-76.93
-77.69
-78.56
-78.96
-79.09
-79.31
-79.38
-79.49
-79.51
-79.58
-79.87
-80.31
-81.1
-81.65
-81.72
-82.13
-82.63
-83.43
-83.66
-84.28
-84.43
-84.78
-85.27
-85.55
-85.69
-85.84
-85.89
-86.65
-87.0
-87.16
-87.26
-87.31
-87.6
-87.74
-88.05
-88.39
-88.48
-89.14
-89.47
-89.61
-89.68
-89.85
-90.36
-90.69
-90.74
-90.78
-90.91
-91.15
-91.38
-91.46
-91.51
-91.92
-92.0
-92.85
-93.21
-93.22
-93.81
-93.95
-93.97
-94.75
-95.0
-95.79
-96.83
-97.54
-97.83
-98.13
-98.39
-98.56
-98.7
-98.87
-99.38
-99.46
-99.65
-99.9
+Virginia Macgregor
+Betty Halbreich
+Cindy Dr. Pan
+Bruce Hale
+Jeff Mack
+Annie Maccoby
+Heather Hach
+Jean Reynolds Page
+Jamuna Pai
+Myla Jackson
+Kady MacDonald Denton
+Roger Lea MacBride
+Andy Paciorek
+J.D. Jackson
+Simcha Jacobovici
+Niall Mackenzie
+Ann-Marie MacDonald
+Yossi Klein Halevi
+Gene Hackman
+Tony Macaulay
+Fiona Palmer
+Lynn F. Jacobs
+Araminta Hall
+Sara Mackenzie
+Margaret Read MacDonald
+Carla Jablonski
+Mary Downing Hahn
+Robert Macfarlane
+Robert Jackson
+Jane Paley
+Emily Hainsworth
+Sari Padorr
+Mary MacCracken
+Michael Haag
+Maxwell Mackenzie
+Kevin MacAllister
+Michael Jaime-Becerra
+David Macfarlane
+Jake Page
+John Hornor Jacobs
+H. JACKSON
+Peter Maas
+Keach Hagey
+Sean Padraic
+Sang Pak
+Thomas Pakenham
+Terrence J
+Shane Jacobson
+Hannah Paasch
+Svetlana Palmer
+Helen Palmer
+Stuart B. MacBride
+Wayne Pacelle
+H3CZ
+John Jacobs
+Alison Mackey PhD
+Amanda Mackenzie Stuart
+Elaine Pagels
+Tessa Hadley
+Sammy Hagar
+Keith Habersberger
+Yamile Saied Méndez
+Namita Jain
+Ed J. Paine
+Macky Pamintuan
+Laurence Packer
+John W. Jacobs M.D.
+Michael Panckridge
+Margaret Peterson Haddix
+Thomas Hackett
+Emma Page
+Elaine Hall
+Margaret Haffner
+June Hadley
+Melissa P
+Kathryn Jacobi
+Chris Pallace
+William Hague
+Mary Curran Hackett
+Sheila Hale
+Jeremy Jackson
+Harvey Mackay
+Gildart Jackson
+Jenna Bush Hager
+Cindy Pan
+Danielle Paige
+Korey Jackson
+John Hale
+Katie MacAlister
+Bonnie MacBird
+Derek Jacobi
+Joseph A. Maciariello
+David Packard
+Meredith Jaeger
+Rebecca Pacheco
+Scott Palmer
+Nathan Hale
+Pamela Haag
+Bernie Mac
+Amanda Hall
+Marianna Palka
+Madhur Jaffrey
+Peter Haining
+Bonner Paddock
+Rona Jaffe
+Alison Mackey
+Jim Paillot
+Sara MacDonald
+Daniel Paisner
+Kristin Hahn
+Aggie MacKenzie
+Philip MacDonald
+Colin Jack
+Tracy Hafen
+Shvetha Jaishankar
+Michele Jaffe
+Emma Jackson
+Peter Jackson
+Magnus MacFarlane-Barrow
+Ian Jackman
+Kellie Hailes
+Kennell Jackson
+Richard Jackson
+Carrington MacDuffie
+Katherine Hall Page
+Chuck Hagel
+T. T. Macan
+Catherine Macaulay
+Frank Pacetta
+Iva-Marie Palmer
+Andrew Jacobson
+Carla Hall
+Michael Hague
+Albert Jack
+Rachel Jacobs
+Stuart MacBride
+Jerome A. Jackson
+Barry Pain
+Robin MacArthur
+Betty MacDonald
+Bonnie MacBird
+Amanda Mackenzie Stuart
+Meredith L. Jacobs
+Kevin MacAllister
+Cynthia Jabar
+Howard Jacobson
+D. J. MacHale
+Saskia Maarleveld
+Louise Mack
+Sarah Palin
+Marylin Hafner
+Charlie Haas
+Mick Jackson
+Bethany Palmer
+Melanie MacHugh
+Bethany Hagen
+Tiffany D. Jackson
+Mark Palmer
+Adele Jacques
+Auston Habershaw
+Chris Packham
+Nafisa Haji
+Rebecca Paley
+Marilyn Hagerty
+Shaili Jain M.D.
+Al Jaffee
+Nasim Marie Jafry
+Laura Holmes Haddad
+David H. Hackworth
+Shelley Jackson
+Daniel Palmer
+Marianna Palk
+Thelma Page
+Vicky Hales-Dutton
+Guru Jagat
+Rawi Hage
+Kathryn Miller Haines
+Stuart MacBride
+Ruth H. Jacobs
+Steve Hagen
+Margie Palatini
+Don Hagen
+Steve Jackson
+Anthony Haden-Guest
+Dana Jacobi
+W. G. Hale
+Carlos Pan
+Debra W. Haffner
+George Jacobs
+Niccolo Machiavelli
+Alan Jacobs
+Kate Jacoby
+Olivia Mace
+David Halberstam
+Colleen Padilla
+Kathleen Hale
+Allan Hall
+Richard Jacoby
+William Haefeli
+Jennifer Haigh
+Douglas Palmer
+Gordon Jack
+Ron Padgett
+Amanda Maciel
+Christopher N. Page
+Ellie Macdonald
+Portia MacIntosh
+Kathryn Ma
+Piers A. Jacob
+Norm MacDonald
+Tracey Jackson
+Helena S. Paige
+Penny Palmano
+Ellen Jackson
+Gracie MacGregor
+Gerry Hadden
+A.N.D Haksar
+James Graham Hale
+Merle Haggard
+Steven Pacey
+Edward Paice
+Shannon Hale
+Norm Macdonald
+Michael Page
+George Packer
+Steph Jagger
+Roger O.M.D. Jahnke
+Simon Jacobson
+Warren Mackenzie
+Tim Andres Pabon
+Sylvie Haisman
+Nate Jackson
+Linden MacIntyre
+Juliette MacIver
+Madeleine Maby
+Dana C. Jack
+Bristol Palin
+Aparna Jain
+Taylor Hackford
+David Haig
+Lorrie Mack
+Sophie Jaff
+Bradley Jackson
+Robert Ian MacKenzie
+Ruby Jackson
+Charles B. Macdonald
+Greg Page
+Andrew Macdonald
+Alex James
+Marina Palmer
+David Jacobs
+Jeannette Haien
+Daniel Hahn
+Sara Palacios
+Charles Panati
+Fiona MacKenzie
+Mark Haddon
+Julie Mac
+James Macdonald
+Jane MacDougall
+Tim Page
+Harvey B. Mackay
+Jennifer Page
+Audrey Mackaman
+Burton L. Mack
+Jessie Haas
+Joshilyn Jackson
+Melissa Jacobs
+Michael Hale
+Jeff MacGregor
+Fiona MacDonald
+Katharina Hagena
+Sarah Jacoby
+Anna-Liisa Hakkarainen
+Joie Jager-Hyman
+Alex Palmer
+David Hagedorn
+M MacCallum
+James B. Maas
+Manoj Pandey
+John W. Jacobs
+Thomas Paine
+Richard Mabey
+Jo Jackson King
+Nick Page
+Kinley MacGregor
+Liza Palmer
+Libby Jackson
+Kristin Halbrook
+Auston Habershaw
+Chris Packham
+Nafisa Haji
+Rebecca Paley
+Marilyn Hagerty
+Shaili Jain M.D.
+Al Jaffee
+Nasim Marie Jafry
+Laura Holmes Haddad
+David H. Hackworth
+Shelley Jackson
+Daniel Palmer
+Marianna Palk
+Thelma Page
+Vicky Hales-Dutton
+Guru Jagat
+Rawi Hage
+Kathryn Miller Haines
+Stuart MacBride
+Ruth H. Jacobs
+Steve Hagen
+Margie Palatini
+Don Hagen
+Steve Jackson
+Anthony Haden-Guest
+Dana Jacobi
+W. G. Hale
+Carlos Pan
+Debra W. Haffner
+George Jacobs
+Niccolo Machiavelli
+Alan Jacobs
+Kate Jacoby
+Olivia Mace
+David Halberstam
+Colleen Padilla
+Kathleen Hale
+Allan Hall
+Richard Jacoby
+William Haefeli
+Jennifer Haigh
+Douglas Palmer
+Gordon Jack
+Ron Padgett
+Amanda Maciel
+Christopher N. Page
+Ellie Macdonald
+Portia MacIntosh
+Kathryn Ma
+Piers A. Jacob
+Norm MacDonald
+Tracey Jackson
+Helena S. Paige
+Penny Palmano
+Ellen Jackson
+Gracie MacGregor
+Gerry Hadden
+A.N.D Haksar
+James Graham Hale
+Merle Haggard
+Steven Pacey
+Edward Paice
+Shannon Hale
+Norm Macdonald
+Michael Page
+George Packer
+Steph Jagger
+Roger O.M.D. Jahnke
+Simon Jacobson
+Warren Mackenzie
+Tim Andres Pabon
+Sylvie Haisman
+Nate Jackson
+Linden MacIntyre
+Juliette MacIver
+Madeleine Maby
+Dana C. Jack
+Bristol Palin
+Aparna Jain
+Taylor Hackford
+David Haig
+Lorrie Mack
+Sophie Jaff
+Bradley Jackson
+Robert Ian MacKenzie
+Ruby Jackson
+Charles B. Macdonald
+Greg Page
+Andrew Macdonald
+Alex James
+Marina Palmer
+David Jacobs
+Jeannette Haien
+Daniel Hahn
+Sara Palacios
+Charles Panati
+Fiona MacKenzie
+Mark Haddon
+Julie Mac
+James Macdonald
+Jane MacDougall
+Tim Page
+Harvey B. Mackay
+Jennifer Page
+Audrey Mackaman
+Burton L. Mack
+Jessie Haas
+Joshilyn Jackson
+Melissa Jacobs
+Michael Hale
+Jeff MacGregor
+Fiona MacDonald
+Katharina Hagena
+Sarah Jacoby
+Anna-Liisa Hakkarainen
+Joie Jager-Hyman
+Alex Palmer
+David Hagedorn
+M MacCallum
+James B. Maas
+Manoj Pandey
+John W. Jacobs
+Thomas Paine
+Richard Mabey
+Jo Jackson King
+Nick Page
+Kinley MacGregor
+Liza Palmer
+Libby Jackson
+Kristin Halbrook
+Virginia Macgregor
+Betty Halbreich
+Cindy Dr. Pan
+Bruce Hale
+Jeff Mack
+Annie Maccoby
+Heather Hach
+Jean Reynolds Page
+Jamuna Pai
+Myla Jackson
+Kady MacDonald Denton
+Roger Lea MacBride
+Andy Paciorek
+J.D. Jackson
+Simcha Jacobovici
+Niall Mackenzie
+Ann-Marie MacDonald
+Yossi Klein Halevi
+Gene Hackman
+Tony Macaulay
+Fiona Palmer
+Lynn F. Jacobs
+Araminta Hall
+Sara Mackenzie
+Margaret Read MacDonald
+Carla Jablonski
+Mary Downing Hahn
+Robert Macfarlane
+Robert Jackson
+Jane Paley
+Emily Hainsworth
+Sari Padorr
+Mary MacCracken
+Michael Haag
+Maxwell Mackenzie
+Kevin MacAllister
+Michael Jaime-Becerra
+David Macfarlane
+Jake Page
+John Hornor Jacobs
+H. JACKSON
+Peter Maas
+Keach Hagey
+Sean Padraic
+Sang Pak
+Thomas Pakenham
+Terrence J
+Shane Jacobson
+Hannah Paasch
+Svetlana Palmer
+Helen Palmer
+Stuart B. MacBride
+Wayne Pacelle
+H3CZ
+John Jacobs
+Alison Mackey PhD
+Amanda Mackenzie Stuart
+Elaine Pagels
+Tessa Hadley
+Sammy Hagar
+Keith Habersberger
+Yamile Saied Méndez
+Namita Jain
 Ed J. Paine
 Macky Pamintuan
 Laurence Packer
