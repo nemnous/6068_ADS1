@@ -83,9 +83,17 @@ Student stu = new Student(Integer.parseInt(temp[0]), temp[1], marks);
                     for(Double d : binST.keys(t1, t2)) {
                         System.out.println(binST.get(d).getName());
                     }
-                    // for(Double d : binST.keys(0.0, t2)) {
-                    //     System.out.println(binST.get(d).getName());
-                    // }
+                    break;
+                case "LE":
+                    for(Double d : binST.keys(0.0, Double.parseDouble(str[1]))) {
+                        System.out.println(binST.get(d).getName());
+                    }
+                    break;
+                case "GE":
+                    for(Double d : binST.keys(Double.parseDouble(str[1]), 100.0)) {
+                        System.out.println(binST.get(d).getName());
+                    }
+                    break;
             }
 
         }

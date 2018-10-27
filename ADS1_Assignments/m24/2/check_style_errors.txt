@@ -5,9 +5,14 @@ Starting audit...
 [ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution.java:54:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution.java:56:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution.java:56:29: Parameter args should be final. [FinalParameters]
-[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution.java:76:12: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution.java:76:12: 'for' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution.java:79: switch without "default" clause. [MissingSwitchDefault]
 [ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution.java:79:19: 'switch' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution.java:83:24: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution.java:83:24: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution.java:88: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution.java:88:24: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution.java:93: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution.java:93:24: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution.java:93:75: '100.0' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 15 errors.
