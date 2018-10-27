@@ -1,0 +1,15 @@
+Starting audit...
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution.java:2: Missing a Javadoc comment. [JavadocType]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution.java:54: Missing a Javadoc comment. [JavadocType]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution.java:54:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution.java:56:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution.java:56:29: Parameter args should be final. [FinalParameters]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution.java:76:12: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution.java:79: switch without "default" clause. [MissingSwitchDefault]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution.java:79:19: 'switch' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution.java:83:24: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution.java:83:51: '100.0' is a magic number. [MagicNumber]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution.java:86:24: 'for' is not followed by whitespace. [WhitespaceAfter]
+Audit done.
+Checkstyle ends with 12 errors.
