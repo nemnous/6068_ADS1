@@ -37,12 +37,17 @@ class Solution {
 		for(int i = 0; i < noQuery; i++) {
 			String[] query = scan.nextLine().split(" ");
 			// System.out.println(Arrays.toString(query));
+			int roll = Integer.parseInt(query[1]);
+			if(!linearST.contains(roll)) {
+				System.out.println("Student doesn't exists...");
+				continue;
+			}
 			switch(query[2]) {
 				case "1":
-					System.out.println(linearST.get(Integer.parseInt(query[1])).name);
+					System.out.println(linearST.get(roll).name);
 					break;
 				case "2":
-					System.out.println(linearST.get(Integer.parseInt(query[1])).marks);
+					System.out.println(linearST.get(roll).marks);
 
 			}
 		}
