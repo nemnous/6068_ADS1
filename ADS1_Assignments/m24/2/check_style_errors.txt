@@ -1,15 +1,2 @@
 Starting audit...
-[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution.java:2: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
-[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution.java:4: Missing a Javadoc comment. [JavadocType]
-[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution.java:55:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution.java:65:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution.java:87: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution.java:103: switch without "default" clause. [MissingSwitchDefault]
-[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution.java:109: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution.java:114: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution.java:117: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution.java:124: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution.java:127: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 12 errors.

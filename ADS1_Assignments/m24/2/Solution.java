@@ -1,6 +1,10 @@
 import java.util.Scanner;
-import java.util.*;
+// import java.util.*;
 
+
+/**
+ * Class for student.
+ */
 class Student {
     /**
      * variables name, roll, marks.
@@ -51,7 +55,11 @@ class Student {
     int getRoll() {
         return this.rollNumber;
     }
-
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         return name + " " + rollNumber + " " + marks;
     }
@@ -62,7 +70,14 @@ class Student {
  * so that  students having same marks can be stored in an array.
  *
  */
+
 final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+
+    }
     /**
      * this is the maih function all the inputs are taken from the console.
      * and the output i sprinted.
@@ -84,7 +99,7 @@ final class Solution {
             String[] temp = scan.nextLine().split(",");
             final Double marks = Double.parseDouble(temp[2]);
 
-            Student stu = new Student(Integer.parseInt(temp[0]), temp[1], marks);
+ Student stu = new Student(Integer.parseInt(temp[0]), temp[1], marks);
             if (!binST.contains(marks)) {
                 Student[] stuArr = new Student[2];
                 stuArr[0] = stu;
@@ -106,27 +121,32 @@ final class Solution {
                 Double t2 = Double.parseDouble(str[2]);
                 for (Double d : binST.keys(t1, t2)) {
                     System.out.println(binST.get(d)[0].getName());
-                    if (binST.get(d)[1] != null)
+                    if (binST.get(d)[1] != null) {
                         System.out.println(binST.get(d)[1].getName());
+                    }
                 }
                 break;
             case "LE":
-                for (Double d : binST.keys(binST.min(), Double.parseDouble(str[1]))) {
+for (Double d : binST.keys(binST.min(), Double.parseDouble(str[1]))) {
                     // System.out.println(Arrays.toString(binSt.get(d));
                     System.out.println(binST.get(d)[0].getName());
-                    if (binST.get(d)[1] != null)
+                    if (binST.get(d)[1] != null) {
                         System.out.println(binST.get(d)[1].getName());
+                    }
                 }
                 break;
 
             case "GE":
 
-                for (Double d : binST.keys(Double.parseDouble(str[1]), binST.max())) {
+for (Double d : binST.keys(Double.parseDouble(str[1]), binST.max())) {
                     // System.out.println(Arrays.toString(binSt.get(d));
                     System.out.println(binST.get(d)[0].getName());
-                    if (binST.get(d)[1] != null)
+                    if (binST.get(d)[1] != null) {
                         System.out.println(binST.get(d)[1].getName());
+                    }
                 }
+                break;
+            default:
                 break;
             }
 
