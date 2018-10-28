@@ -66,7 +66,7 @@ class Solution {
 
             	Double t = Double.parseDouble(str[1]);
                 for (Student s : bs.keys()) {
-                	if(s.marks <= t)
+                	if(s.marks >= t)
                     System.out.println(s.name);
                 }
                 break;

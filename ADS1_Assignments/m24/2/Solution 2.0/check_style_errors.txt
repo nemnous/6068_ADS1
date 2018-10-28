@@ -23,14 +23,14 @@ Starting audit...
 [ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution 2.0\Solution.java:22:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution 2.0\Solution.java:22:33: Parameter args should be final. [FinalParameters]
 [ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution 2.0\Solution.java:29: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution 2.0\Solution.java:32:20: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution 2.0\Solution.java:32:20: 'for' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution 2.0\Solution.java:34: Line is longer than 80 characters (found 112). [LineLength]
 [ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution 2.0\Solution.java:35: Line has trailing spaces. [RegexpSingleline]
 [ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution 2.0\Solution.java:53: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution 2.0\Solution.java:53:27: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution 2.0\Solution.java:53:27: 'if' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution 2.0\Solution.java:60: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution 2.0\Solution.java:60:27: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution 2.0\Solution.java:60:27: 'if' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution 2.0\Solution.java:69: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution 2.0\Solution.java:69:27: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\PROGRAMMING\6068_ADS1\ADS1_Assignments\m24\2\Solution 2.0\Solution.java:69:27: 'if' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
 Checkstyle ends with 33 errors.
