@@ -23,7 +23,6 @@ class Solution {
 		Scanner scan = new Scanner(System.in);
 
 		int stdCases = scan.nextInt();
-		// System.out.println(stdCases);
 		scan.nextLine();
 
 		BinarySearchST<Student, Integer> bs = new BinarySearchST<Student, Integer>();
@@ -35,9 +34,6 @@ class Solution {
 			bs.put(stu, stu.roll);		
 		}
 
-		// for(Student i : bs.keys()) {
-		// 	System.out.println(i.marks);
-		// }
 
 
 		int noQuery = scan.nextInt();
